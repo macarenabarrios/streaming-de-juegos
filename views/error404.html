@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="../styles/error404Style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>Playpalooza</title>
@@ -12,11 +12,11 @@
 <header>
   <nav class="navbar navbar-expand-lg bg-black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/img/playpaloozalogoanimated.gif" alt="Playpalooza" width="86" height="86"
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/img/playpaloozalogoanimated.gif" alt="Playpalooza" width="86" height="86"
           class="rounded-circle">
       </a>
-      <a class="tituloPagina navbar-brand titulo text-light" href="#">PLAYPALOOZA</a>
+      <a class="tituloPagina navbar-brand titulo text-light" href="../index.html">PLAYPALOOZA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,6 +44,20 @@
   </nav>
 </header>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-4 mb-4">
+                <img src="../assets/img/error404.png" alt="Error 404">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-4 mb-4">
+                <a href="../index.html" class="botonVolver btn btn-primary">VOLVER</a>
+            </div>
+        </div>
+    </div>
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -61,7 +75,7 @@
               <input type="password" class="form-control" id="password" placeholder="Contraseña">
             </div>
             <div class="text-center">
-              <a href="./views/error404.html" type="submit" class="btn btn-primary">Ingresar</a>
+              <a href="./error404.html" type="submit" id="botonVolver" class="btn btn-primary">Ingresar</a>
           </div>
           </form>
         </div>

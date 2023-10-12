@@ -11,9 +11,14 @@
     font-size: 2rem !important;
 }
 
+body {
+    background: rgb(100,32,160);
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+}
+
 #loginModal .modal-content {
     border-radius: 10px;
-    background: linear-gradient(rgba(100, 32, 160, 1), rgba(1, 0, 9, 1));
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
     color: #fff;
     max-width: 400px;
     max-height: 400px;
@@ -44,14 +49,19 @@
 }
 
 #loginModal .btn-primary {
-    background: linear-gradient(rgba(100, 32, 160, 1), rgba(1, 0, 9, 1));
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
     border: none;
 }
 
 #loginModal .btn-primary:hover {
-    background: linear-gradient(rgba(1, 0, 9, 1), rgba(100, 32, 160, 1));
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
 }
 
 #loginModal .modal-footer {
     text-align: center;
+}
+
+.botonVolver {
+    font-family: 'Pixelify Sans', sans-serif !important;
+    font-size: 2rem !important; 
 }
