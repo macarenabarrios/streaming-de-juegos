@@ -1,0 +1,32 @@
+.body {
+    background: rgb(100,32,160);
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    min-height: 100vh; 
+    font-family: 'Poppins' , sans-serif !important;
+    font-size: 1.5rem !important
+}
+
+.text-light {
+    margin-bottom: 80px;
+}
+
+.card {
+    background-color: #000; 
+    color: #fff; 
+}
+
+.card-top {
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+ 
+}
+
+.pagination {
+    margin-bottom: 40px; 
+    margin-top: 30px;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
