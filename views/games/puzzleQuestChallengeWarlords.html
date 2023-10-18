@@ -12,71 +12,86 @@
     />
     <title>Playpalooza - PuzzleQuest: Challenge of the Warlords</title>
   </head>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-black">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="../../assets/img/playpaloozalogoanimated.gif"
-            alt="Playpalooza"
-            width="86"
-            height="86"
-            class="rounded-circle"
-          />
-        </a>
-        <a class="navbar-brand titulo text-light" href="#">PLAYPALOOZA</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="container">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-light"
-                  aria-current="page"
-                  href="#"
-                  >CATEGORIAS</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link text-light"
-                  data-bs-toggle="modal"
-                  data-bs-target="#loginModal"
-                  href=""
-                  >LOGIN</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">UNETE!</a>
-              </li>
-            </ul>
-          </div>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              BUSCAR
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
+
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../../assets/img/playpaloozalogoanimated.gif"
+              alt="Playpalooza"
+              width="86"
+              height="86"
+              class="rounded-circle"
+            />
+          </a>
+          <a class="navbar-brand titulo text-light" href="#">PLAYPALOOZA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CATEGORIAS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">ACCION Y AVENTURAS</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">DEPORTES</a></li>
+                    <li><a class="dropdown-item" href="#">PUZZLE</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">OTROS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                    href=""
+                    >LOGIN</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">UNETE!</a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                BUSCAR
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div
       class="modal fade"
       id="loginModal"
@@ -196,7 +211,7 @@
     </div>
 
     <!-- ===========   FOOTER   =========== -->
-    <div class="container mt-5">
+    <div class="container">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center border-top py-3 my-4"
       >
@@ -362,12 +377,12 @@
         <ul class="nav col-12 justify-content-center col-md-6 my-3 col-lg-4">
           <li class="nav-item">
             <a class="nav-link px-3 text-light" href="./views/about.html"
-              >About Us</a
+              >Sobre Nosotros</a
             >
           </li>
           <li class="nav-item">
             <a class="nav-link px-3 text-light" href="./views/contact.html"
-              >Contact Us</a
+              >Contacto</a
             >
           </li>
         </ul>
