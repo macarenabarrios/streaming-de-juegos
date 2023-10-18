@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tituloPagina {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 2rem !important;
+}
+
+body {
+    background: rgb(100,32,160);
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+}
+
+.encabezado {
+    font-size: 2rem;
+}
+
+.nombre {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+#loginModal .modal-content {
+    border-radius: 10px;
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    color: #fff;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+#loginModal .modal-header {
+    background: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+#loginModal .modal-body {
+    padding: 20px;
+}
+
+#loginModal .form-group label {
+    font-weight: bold;
+    color: #fff;
+}
+
+#loginModal .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#loginModal .btn-primary {
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    border: none;
+}
+
+#loginModal .btn-primary:hover {
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+}
+
+#loginModal .modal-footer {
+    text-align: center;
+}
