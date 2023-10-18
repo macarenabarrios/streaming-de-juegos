@@ -55,9 +55,9 @@ body {
     background: linear-gradient(0deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
 }
 
-#carouselExampleAutoplaying {
+#carouselExampleAutoplaying, #carouselExampleCaptions2, #carouselExampleCaptions3 {
     width: 100%;
-    max-width: 800px !important;
+    max-width: 1000px !important;
     margin: auto;
     top: 50%;
     transform: TranslateY(10%);
