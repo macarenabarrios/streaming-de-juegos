@@ -55,9 +55,9 @@ body {
     background: linear-gradient(0deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
 }
 
-#carouselExampleAutoplaying, #carouselExampleCaptions2, #carouselExampleCaptions3 {
+#carouselExampleAutoplaying {
     width: 100%;
-    max-width: 1000px !important;
+    max-width: 800px !important;
     margin: auto;
     top: 50%;
     transform: TranslateY(10%);
@@ -70,12 +70,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#carouselExampleCaptions {
+#carouselExampleCaptions, #carouselExampleCaptions2, #carouselExampleCaptions3 {
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    top: 50%;
-    transform: TranslateY(20%);
 }
 
 #titles {
