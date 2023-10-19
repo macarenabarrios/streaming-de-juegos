@@ -48,6 +48,11 @@
 #loginModal .modal-footer {
     text-align: center;
 }
+
+.inputLogin::placeholder {
+    color: white !important;
+}
+
  /* =========================================================================== */
 /* AGREGADO DE ESTILOS AL BODY Y LA PAG PPAL */
 body {

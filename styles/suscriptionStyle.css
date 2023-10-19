@@ -85,6 +85,9 @@ li {
     transform: scale(1.1);
 }
 
+.inputLogin::placeholder {
+    color: white !important;
+}
 
 #registroModal .modal-content {
     border-radius: 10px;
