@@ -21,13 +21,17 @@ li {
     font-family: 'Pixelify Sans', sans-serif;
 }
 
-.card {
+.cardSuscripcion {
     border: 1px solid rgba(0, 0, 0, 0.192);
     border-radius: 20px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 16rem; 
+    margin: auto; 
+    padding: auto;
 }
+
 
 .botonSuscribirse {
     font-family: 'Pixelify Sans', sans-serif !important;
