@@ -55,3 +55,42 @@
 #loginModal .modal-footer {
     text-align: center;
 }
+
+.inputLogin::placeholder {
+    color: white !important;
+}
+
+ /* =========================================================================== */
+/* AGREGADO DE ESTILOS AL BODY Y LA PAG PPAL */
+body {
+    background: rgb(100, 32, 160);
+    background: linear-gradient(0deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
+}
+
+#carouselExampleAutoplaying {
+    width: 100%;
+    max-width: 800px !important;
+    margin: auto;
+    top: 50%;
+    transform: TranslateY(10%);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: TranslateY(60%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#carouselExampleCaptions, #carouselExampleCaptions2, #carouselExampleCaptions3 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#titles {
+    color: #fff;
+
+
+
+}
