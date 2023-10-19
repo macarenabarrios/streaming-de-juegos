@@ -11,9 +11,14 @@
     font-size: 2rem !important;
 }
 
+body {
+    background: rgb(100,32,160);
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+}
+
 #loginModal .modal-content {
     border-radius: 10px;
-    background: linear-gradient(rgba(100, 32, 160, 1), rgba(1, 0, 9, 1));
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
     color: #fff;
     max-width: 400px;
     max-height: 400px;
@@ -44,53 +49,19 @@
 }
 
 #loginModal .btn-primary {
-    background: linear-gradient(rgba(100, 32, 160, 1), rgba(1, 0, 9, 1));
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
     border: none;
 }
 
 #loginModal .btn-primary:hover {
-    background: linear-gradient(rgba(1, 0, 9, 1), rgba(100, 32, 160, 1));
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
 }
 
 #loginModal .modal-footer {
     text-align: center;
 }
 
-.inputLogin::placeholder {
-    color: white !important;
-}
-
- /* =========================================================================== */
-/* AGREGADO DE ESTILOS AL BODY Y LA PAG PPAL */
-body {
-    background: rgb(100, 32, 160);
-    background: linear-gradient(0deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
-}
-
-#carouselExampleAutoplaying {
-    width: 100%;
-    max-width: 800px !important;
-    margin: auto;
-    top: 50%;
-    transform: TranslateY(10%);
-}
-
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    transform: TranslateY(60%);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#carouselExampleCaptions, #carouselExampleCaptions2, #carouselExampleCaptions3 {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-}
-
-#titles {
-    color: #fff;
-
-
-
+.botonVolver {
+    font-family: 'Pixelify Sans', sans-serif !important;
+    font-size: 2rem !important; 
 }
