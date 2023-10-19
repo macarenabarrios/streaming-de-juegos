@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.tituloPagina {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 2rem !important;
+}
+
+body {
+    background: rgb(100,32,160);
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+}
+
+li {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.cardSuscripcion {
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 16rem; 
+    margin: auto; 
+    padding: auto;
+}
+
+
+.botonSuscribirse {
+    font-family: 'Pixelify Sans', sans-serif !important;
+    font-size: 1.5rem !important;
+    transition: transform 0.5s;
+}
+
+.botonSuscribirse:hover {
+    transform: scale(1.1);
+}
+
+#loginModal .modal-content {
+    border-radius: 10px;
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    color: #fff;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+#loginModal .modal-header {
+    background: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+#loginModal .modal-body {
+    padding: 20px;
+}
+
+#loginModal .form-group label {
+    font-weight: bold;
+    color: #fff;
+}
+
+#loginModal .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#loginModal .btn-primary {
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    transition: transform 0.5s;
+}
+
+#loginModal .btn-primary:hover {
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    transform: scale(1.1);
+}
+
+
+#registroModal .modal-content {
+    border-radius: 10px;
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    color: #fff;
+    max-width: auto;
+    max-height: auto;
+    margin: 0 auto;
+}
+
+#registroModal .modal-header {
+    background: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+#registroModal .modal-body {
+    padding: 20px;
+}
+
+#registroModal .form-group label {
+    font-weight: bold;
+    color: #fff;
+}
+
+#registroModal .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#registroModal .btn-primary {
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    transition: transform 0.5s;
+}
+
+#registroModal .btn-primary:hover {
+    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    transform: scale(1.1);
+}
