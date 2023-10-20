@@ -3,8 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.botonBuscar {
+    background-color: rgba(100, 32, 160, 1);
+    color: rgba(1, 0, 9, 1);
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    
+    .botonBuscar:hover {
+    background-color: rgb(157, 92, 214);
+    color: white;
+    font-weight: bolder;
+    }
 
 .tituloPagina {
     font-family: 'Bebas Neue', sans-serif !important;
@@ -57,7 +76,7 @@
 }
 
 .inputLogin::placeholder {
-    color: white !important;
+    color: lightgray !important;
 }
 
  /* =========================================================================== */
@@ -90,7 +109,4 @@ body {
 
 #titles {
     color: #fff;
-
-
-
 }
