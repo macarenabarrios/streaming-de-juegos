@@ -3,8 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: white;
 }
 
 .tituloPagina {
@@ -12,12 +15,28 @@
     font-size: 2rem !important;
 }
 
-body {
-    background: rgb(100,32,160);
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+.botonBuscar {
+    background-color: rgba(100, 32, 160, 1);
+    color: rgba(1, 0, 9, 1);
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.contacto{
+.botonBuscar:hover {
+    background-color: rgb(157, 92, 214);
+    color: white;
+    font-weight: bolder;
+}
+
+body {
+    background: rgb(100, 32, 160);
+    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
+}
+
+.contacto {
     font-size: 1.3rem;
 }
 
@@ -28,7 +47,7 @@ body {
 
 #loginModal .modal-content {
     border-radius: 10px;
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
     color: #fff;
     max-width: 400px;
     max-height: 400px;
@@ -59,12 +78,12 @@ body {
 }
 
 #loginModal .btn-primary {
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
     border: none;
 }
 
 #loginModal .btn-primary:hover {
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
 }
 
 #loginModal .modal-footer {
@@ -73,10 +92,10 @@ body {
 
 #consultaModal .modal-content {
     border-radius: 10px;
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
     color: #fff;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: AUTO;
+    max-height: AUTO;
     margin: 0 auto;
 }
 
@@ -104,14 +123,18 @@ body {
 }
 
 #consultaModal .btn-primary {
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
     border: none;
 }
 
 #consultaModal .btn-primary:hover {
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
 }
 
 #consultaModal .modal-footer {
     text-align: center;
+}
+
+.inputConsulta {
+    resize: none;
 }
