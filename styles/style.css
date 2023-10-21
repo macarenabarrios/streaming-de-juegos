@@ -60,7 +60,7 @@
     color: white !important;
 }
 
- /* =========================================================================== */
+/* =========================================================================== */
 /* AGREGADO DE ESTILOS AL BODY Y LA PAG PPAL */
 body {
     background: rgb(100, 32, 160);
@@ -82,7 +82,9 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#carouselExampleCaptions, #carouselExampleCaptions2, #carouselExampleCaptions3 {
+#carouselExampleCaptions,
+#carouselExampleCaptions2,
+#carouselExampleCaptions3 {
     width: 100%;
     max-width: 1000px;
     margin: auto;
@@ -90,7 +92,4 @@ body {
 
 #titles {
     color: #fff;
-
-
-
 }

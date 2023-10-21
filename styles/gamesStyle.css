@@ -19,7 +19,7 @@
 
 body {
     background: rgb(100, 32, 160);
-    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
+    background: linear-gradient(0deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
 }
 
 #loginModal .modal-content {
@@ -80,4 +80,10 @@ body {
 
 .suscribeBtn:hover {
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 376px) {
+    body {
+        margin-top: 4rem;
+    }
 }
