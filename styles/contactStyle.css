@@ -47,7 +47,7 @@ body {
 
 #loginModal .modal-content {
     border-radius: 10px;
-    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
+    background: linear-gradient(rgba(100, 32, 160, 1), rgba(1, 0, 9, 1));
     color: #fff;
     max-width: 400px;
     max-height: 400px;
@@ -66,6 +66,10 @@ body {
     padding: 20px;
 }
 
+#loginModal .form-group {
+    padding: 20px;
+}
+
 #loginModal .form-group label {
     font-weight: bold;
     color: #fff;
@@ -78,16 +82,20 @@ body {
 }
 
 #loginModal .btn-primary {
-    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
+    background: linear-gradient(rgba(100, 32, 160, 1), rgba(1, 0, 9, 1));
     border: none;
 }
 
 #loginModal .btn-primary:hover {
-    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
+    background: linear-gradient(rgba(1, 0, 9, 1), rgba(100, 32, 160, 1));
 }
 
 #loginModal .modal-footer {
     text-align: center;
+}
+
+.inputLogin::placeholder {
+    color: lightgray !important;
 }
 
 #consultaModal .modal-content {
