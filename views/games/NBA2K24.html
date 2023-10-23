@@ -13,10 +13,11 @@
     <title>Playpalooza - NBA 2K24</title>
   </head>
   <body>
+    <!-- INICIO NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../../index.html">
             <img
               src="../../assets/img/playpaloozalogoanimated.gif"
               alt="Playpalooza"
@@ -78,7 +79,9 @@
                         >PUZZLE</a
                       >
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
                     <li>
                       <a class="dropdown-item" href="../error404.html">OTROS</a>
                     </li>
@@ -100,21 +103,25 @@
                 </li>
               </ul>
             </div>
-            <form class="d-flex" role="search">
+            <form action="../error404.html" class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar"
                 aria-label="Search"
+                minlength="2"
+                maxlength="20"
+                pattern="[a-zA-Z\s]+"
+                required
               />
-              <button class="btn btn-outline-success" type="submit">
-                BUSCAR
-              </button>
+              <button class="botonBuscar" type="submit">BUSCAR</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+    <!-- FIN DEL NAVBAR -->
+    <!-- INICIO MODAL LOGIN -->
     <div
       class="modal fade"
       id="loginModal"
@@ -129,14 +136,18 @@
             <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="./error404.html">
               <div class="form-group">
                 <label for="username">Nombre de Usuario</label>
                 <input
                   type="text"
                   class="form-control inputLogin"
                   id="username"
-                  placeholder="Nombre de Usuario"
+                  placeholder="Ingresa tu nombre de usuario"
+                  minlength="2"
+                  maxlength="20"
+                  pattern="[a-zA-Z\s]+"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -145,20 +156,20 @@
                   type="password"
                   class="form-control inputLogin"
                   id="password"
-                  placeholder="Contraseña"
+                  placeholder="Ingresa tu contraseña"
+                  pattern=".{8,}"
+                  required
                 />
               </div>
               <div class="text-center">
-                <a href="../error404.html" type="submit" class="btn btn-primary"
-                  >Ingresar</a
-                >
+                <button type="submit" class="btn btn-primary">Ingresar</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-
+    <!-- FIN MODAL LOGIN -->
     <!-- ===========   DESCRIPCION JUEGO   =========== -->
     <div class="container-fluid mt-5 mb-5">
       <div class="row flex-wrap ms-lg-0">

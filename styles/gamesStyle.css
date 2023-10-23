@@ -12,6 +12,22 @@
     font-size: 2rem !important;
 }
 
+.botonBuscar {
+    background-color: rgba(100, 32, 160, 1);
+    color: rgba(1, 0, 9, 1);
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botonBuscar:hover {
+    background-color: rgb(157, 92, 214);
+    color: white;
+    font-weight: bolder;
+}
+
 .tituloJuego,
 .descripcionJuego {
     font-family: 'Play', sans-serif;
@@ -56,15 +72,16 @@ body {
 
 #loginModal .btn-primary {
     background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
-    border: none;
+    transition: transform 0.5s;
 }
 
 #loginModal .btn-primary:hover {
     background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
+    transform: scale(1.1);
 }
 
-#loginModal .modal-footer {
-    text-align: center;
+.inputLogin::placeholder {
+    color: lightgray !important;
 }
 
 .gameLogotype {

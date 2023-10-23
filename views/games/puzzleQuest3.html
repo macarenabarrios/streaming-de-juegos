@@ -13,10 +13,11 @@
     <title>Playpalooza - Puzzle Quest 3</title>
   </head>
   <body>
+    <!-- INICIO NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../../index.html">
             <img
               src="../../assets/img/playpaloozalogoanimated.gif"
               alt="Playpalooza"
@@ -25,7 +26,11 @@
               class="rounded-circle"
             />
           </a>
-          <a class="navbar-brand titulo text-light" href="#">PLAYPALOOZA</a>
+          <a
+            class="tituloPagina navbar-brand titulo text-light"
+            href="../../index.html"
+            >PLAYPALOOZA</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -54,12 +59,32 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">ACCION Y AVENTURAS</a>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/index.html"
+                        >ACCION Y AVENTURAS</a
+                      >
                     </li>
-                    <li><a class="dropdown-item" href="#">DEPORTES</a></li>
-                    <li><a class="dropdown-item" href="#">PUZZLE</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">OTROS</a></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/deportes/index.html"
+                        >DEPORTES</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/puzzle/index.html"
+                        >PUZZLE</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../error404.html">OTROS</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -72,25 +97,31 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">UNETE!</a>
+                  <a class="nav-link text-light" href="../suscription.html"
+                    >UNETE!</a
+                  >
                 </li>
               </ul>
             </div>
-            <form class="d-flex" role="search">
+            <form action="../error404.html" class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar"
                 aria-label="Search"
+                minlength="2"
+                maxlength="20"
+                pattern="[a-zA-Z\s]+"
+                required
               />
-              <button class="btn btn-outline-success" type="submit">
-                BUSCAR
-              </button>
+              <button class="botonBuscar" type="submit">BUSCAR</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+    <!-- FIN DEL NAVBAR -->
+    <!-- INICIO MODAL LOGIN -->
     <div
       class="modal fade"
       id="loginModal"
@@ -105,23 +136,29 @@
             <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="./error404.html">
               <div class="form-group">
                 <label for="username">Nombre de Usuario</label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control inputLogin"
                   id="username"
-                  placeholder="Nombre de Usuario"
+                  placeholder="Ingresa tu nombre de usuario"
+                  minlength="2"
+                  maxlength="20"
+                  pattern="[a-zA-Z\s]+"
+                  required
                 />
               </div>
               <div class="form-group">
                 <label for="password">Contraseña</label>
                 <input
                   type="password"
-                  class="form-control"
+                  class="form-control inputLogin"
                   id="password"
-                  placeholder="Contraseña"
+                  placeholder="Ingresa tu contraseña"
+                  pattern=".{8,}"
+                  required
                 />
               </div>
               <div class="text-center">
@@ -132,11 +169,12 @@
         </div>
       </div>
     </div>
-
+    <!-- FIN MODAL LOGIN -->
     <!-- ===========   DESCRIPCION JUEGO   =========== -->
-    <div class="container mt-5 mb-5">
-      <div class="row">
-        <div class="col-9 mt-5 fs-1">
+    <div class="container-fluid mt-5 mb-5">
+      <div class="row flex-wrap ms-lg-0">
+        <!-- ===========   COLUMNA 1   =========== -->
+        <div class="col-12 fs-1">
           <h1 class="tituloJuego fs-1" id="tituloJuego">
             <img
               src="../../assets/img/logotypes/puzzleQuest3.gif"
@@ -146,8 +184,9 @@
             PUZZLE QUEST 3
           </h1>
         </div>
-        <div class="descripcionJuego col-5 mt-5">
-          <span class="d-block mb-2"><b>ACERCA DE ESTE JUEGO</b></span>
+        <!-- ===========   COLUMNA 2   =========== -->
+        <div class="descripcionJuego col-sm-12 col-md-6 mt-5">
+          <span class="d-block mb-2 fs-5"><b>ACERCA DE ESTE JUEGO</b></span>
           <p class="mt-4">
             Domina el combate estratégico Conecta 3 en Puzzle Quest 3, la nueva
             entrega de la mundialmente famosa saga de juegos de rol y puzles.
@@ -159,60 +198,40 @@
             Quest.
           </p>
           <p class="mt-5"><b>FECHA DE LANZAMIENTO:</b> 30 mayo 2023</p>
-          <a
-            href="../suscription.html"
-            class="suscribeBtn col-6 mt-5 btn btn-primary"
-            >JUGAR AHORA 🎮</a
-          >
-        </div>
-        <div class="col-6 ms-5 mb-5">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              class="embed-responsive-item"
-              width="640"
-              height="480"
-              src="https://www.youtube.com/embed/4CfdiYLMAH0?si=KpBFsf_wZp0hoO4T"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="descripcionJuego col-6">
-            <span class="d-block mb-2"
-              ><b>BATALLAS DE PUZLES RECIÉN EVOLUCIONADAS</b></span
+          <div class="text-center text-lg-start text-md-start">
+            <a
+              href="../suscription.html"
+              class="suscribeBtn mt-4 mb-sm-5 mb-md-5 btn btn-primary"
+              >JUGAR AHORA 🎮</a
             >
-            <p class="mt-4">
-              Conecta gemas en cualquier dirección para cargar tus hechizos y
-              desatar poderosos ataques en batallas 1 contra 1 llenas de acción.
-              Pueden pasar muchas cosas en un solo turno: la planificación es la
-              clave de la victoria.
-            </p>
-            <img
-              src="../../assets/img/puzzleQuest3-video1.gif"
-              class="gameLogotype img-fluid w-100"
-              alt="..."
-            />
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="descripcionJuego col-6">
-            <span class="d-block mb-2"><b>EL VIAJE DE UN HÉROE</b></span>
-            <p class="mt-4">
-              ¡Elige el héroe que quieras encarnar! Métete en la piel de un
-              paladín, berserker, chamán, asesino o nigromante y descubre sus
-              diferentes historias mientras subes de nivel, mejoras las
-              habilidades de tu héroe y adquieres nuevas armas, armaduras y
-              mucho más.
-            </p>
-            <img
-              src="../../assets/img/puzzleQuest3-video2.gif"
-              class="gameLogotype img-fluid w-100"
-              alt="..."
-            />
-          </div>
+        <!-- ===========   VIDEO   =========== -->
+        <div class="video-responsive col-sm-12 col-md-5 mb-5 mt-4">
+          <video
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/256949923/movie480_vp9.webm?t=1685493362"
+            class="d-block w-100 embed-responsive-item"
+            controls
+          ></video>
+        </div>
+        <!-- ===========   FILA   =========== -->
+        <div class="col me-lg-5">
+          <p class="fs-5 mt-md-4"></p>
+          <p>
+            <b>BATALLAS DE PUZLES RECIÉN EVOLUCIONADAS</b>
+            Conecta gemas en cualquier dirección para cargar tus hechizos y
+            desatar poderosos ataques en batallas 1 contra 1 llenas de acción.
+            Pueden pasar muchas cosas en un solo turno: la planificación es la
+            clave de la victoria.
+          </p>
+          <p>
+            <b>EL VIAJE DE UN HÉROE</b>
+            ¡Elige el héroe que quieras encarnar! Métete en la piel de un
+            paladín, berserker, chamán, asesino o nigromante y descubre sus
+            diferentes historias mientras subes de nivel, mejoras las
+            habilidades de tu héroe y adquieres nuevas armas, armaduras y mucho
+            más.
+          </p>
         </div>
       </div>
     </div>

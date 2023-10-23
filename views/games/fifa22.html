@@ -10,13 +10,14 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>Playpalooza - Counter Strike 2</title>
+    <title>Playpalooza - FIFA 22</title>
   </head>
   <body>
+    <!-- INICIO NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../../index.html">
             <img
               src="../../assets/img/playpaloozalogoanimated.gif"
               alt="Playpalooza"
@@ -25,7 +26,11 @@
               class="rounded-circle"
             />
           </a>
-          <a class="navbar-brand titulo text-light" href="#">PLAYPALOOZA</a>
+          <a
+            class="tituloPagina navbar-brand titulo text-light"
+            href="../../index.html"
+            >PLAYPALOOZA</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -54,12 +59,32 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">ACCION Y AVENTURAS</a>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/index.html"
+                        >ACCION Y AVENTURAS</a
+                      >
                     </li>
-                    <li><a class="dropdown-item" href="#">DEPORTES</a></li>
-                    <li><a class="dropdown-item" href="#">PUZZLE</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">OTROS</a></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/deportes/index.html"
+                        >DEPORTES</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/puzzle/index.html"
+                        >PUZZLE</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../error404.html">OTROS</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -72,25 +97,31 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">UNETE!</a>
+                  <a class="nav-link text-light" href="../suscription.html"
+                    >UNETE!</a
+                  >
                 </li>
               </ul>
             </div>
-            <form class="d-flex" role="search">
+            <form action="../error404.html" class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar"
                 aria-label="Search"
+                minlength="2"
+                maxlength="20"
+                pattern="[a-zA-Z\s]+"
+                required
               />
-              <button class="btn btn-outline-success" type="submit">
-                BUSCAR
-              </button>
+              <button class="botonBuscar" type="submit">BUSCAR</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+    <!-- FIN DEL NAVBAR -->
+    <!-- INICIO MODAL LOGIN -->
     <div
       class="modal fade"
       id="loginModal"
@@ -105,23 +136,29 @@
             <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="./error404.html">
               <div class="form-group">
                 <label for="username">Nombre de Usuario</label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control inputLogin"
                   id="username"
-                  placeholder="Nombre de Usuario"
+                  placeholder="Ingresa tu nombre de usuario"
+                  minlength="2"
+                  maxlength="20"
+                  pattern="[a-zA-Z\s]+"
+                  required
                 />
               </div>
               <div class="form-group">
                 <label for="password">Contraseña</label>
                 <input
                   type="password"
-                  class="form-control"
+                  class="form-control inputLogin"
                   id="password"
-                  placeholder="Contraseña"
+                  placeholder="Ingresa tu contraseña"
+                  pattern=".{8,}"
+                  required
                 />
               </div>
               <div class="text-center">
@@ -132,49 +169,103 @@
         </div>
       </div>
     </div>
-
+    <!-- FIN MODAL LOGIN -->
     <!-- ===========   DESCRIPCION JUEGO   =========== -->
-    <div class="aboutgame container mt-5 mb-5" id="aboutGame">
-      <div class="row">
-        <div class="col-9 mt-5 fs-1">
+    <div class="container-fluid mt-5 mb-5">
+      <div class="row flex-wrap ms-lg-0">
+        <!-- ===========   COLUMNA 1   =========== -->
+        <div class="col-12 fs-1">
           <h1 class="tituloJuego fs-1" id="tituloJuego">
             <img
-              src="../../assets/img/logotypes/counterStrike.png"
+              src="../../assets/img/logotypes/FIFA22.png"
               class="gameLogotype img-fluid"
               alt="..."
             />
-            COUNTER STRIKE 2
+            FIFA 22
           </h1>
         </div>
-        <div class="descripcionJuego col-5 mt-5">
-          <span class="d-block mb-2"><b>ACERCA DE ESTE JUEGO</b></span>
+        <!-- ===========   COLUMNA 2   =========== -->
+        <div class="descripcionJuego col-sm-12 col-md-6 mt-5">
+          <span class="d-block mb-2 fs-5"><b>ACERCA DE ESTE JUEGO</b></span>
           <p class="mt-4">
-            Disfruta del juego de acción en línea n° 1 en el mundo. Sumérgete en
-            el fragor de la guerra antiterrorista más realista con este
-            archiconocido juego por equipos. Alíate con compañeros para superar
-            misiones estratégicas, asalta bases enemigas, rescata rehenes, y
-            recuerda que tu personaje contribuye al éxito del equipo y
-            viceversa.
+            Powered by Football™ <b>EA SPORTS™ FIFA 22</b> acerca aún más el
+            juego a la realidad gracias a mejoras significativas en la
+            jugabilidad y una nueva temporada de novedades en todos los modos.
           </p>
-          <p class="mt-5"><b>FECHA DE LANZAMIENTO:</b> 1 nov 2000</p>
-          <a
-            href="../suscription.html"
-            class="suscribeBtn col-6 mt-5 btn btn-primary"
-            >JUGAR AHORA 🎮</a
-          >
-        </div>
-        <div class="col-6 ms-5 mb-5">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              class="embed-responsive-item"
-              width="640"
-              height="480"
-              src="https://www.youtube.com/embed/nSE38xjMLqE?si=Nz9FH5aXIWEkbnd2"
-              allowfullscreen
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+          <p>
+            Juega al juego del mundo con más de 17 000 jugadores, más de 700
+            equipos, más de 90 estadios y más de 30 ligas de todo el mundo.
+          </p>
+          <p class="mt-5"><b>FECHA DE LANZAMIENTO:</b> 1 octubre 2021</p>
+          <div class="text-center text-lg-start text-md-start">
+            <a
+              href="../suscription.html"
+              class="suscribeBtn mt-4 mb-sm-5 mb-md-5 btn btn-primary"
+              >JUGAR AHORA 🎮</a
+            >
           </div>
+        </div>
+        <!-- ===========   VIDEO   =========== -->
+        <div class="video-responsive col-sm-12 col-md-5 mb-5 mt-4">
+          <video
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/256852627/movie480_vp9.webm?t=1633113400"
+            class="d-block w-100 embed-responsive-item"
+            controls
+          ></video>
+        </div>
+        <!-- ===========   FILA   =========== -->
+        <div class="col me-lg-5">
+          <p class="fs-5 mt-md-4">
+            <b>MODOS DE JUEGO</b>
+          </p>
+          <p>
+            <b>Modo Carrera:</b> vive tus sueños con FIFA 22, ya sea como
+            mánager o como futbolista. Crea el club más nuevo de FIFA, diseña
+            tus equipaciones y tu estadio y decide si quieres competir con la
+            élite o ascender desde las divisiones inferiores mientras encaminas
+            a tu club hacia la gloria. También puedes probar tus habilidades
+            como futbolista con un modo Carrera de jugador más inmersivo, que te
+            dará más formas de progresar, alcanzar tus objetivos y sumergirte en
+            tu viaje Pro mediante el juego.
+          </p>
+          <p>
+            <b>VOLTA FOOTBALL:</b> vuelve a conquistar las calles con VOLTA
+            FOOTBALL. Crea tu futbolista, elige tu equipación y exprésate a tu
+            manera, por tu cuenta o con tu plantilla, en las calles y pistas de
+            fútbol de todo el mundo. Consigue recompensas por tu habilidad con
+            el balón gracias al nuevo estilo de juego rediseñado y juega cada
+            temporada a eventos únicos que tienen lugar en emplazamientos
+            especiales, al tiempo que desbloqueas nuevo equipamiento mediante un
+            nuevo sistema de progreso en la temporada, que te permite ganar XP
+            en todas las recompensas que se ofrecen en VOLTA FOOTBALL sin
+            importar el modo al que juegues.
+          </p>
+          <p>
+            <b>FIFA Ultimate Team:</b> Participa en el modo más popular de FIFA,
+            FIFA Ultimate Team. Crea el equipo de tus sueños con miles de
+            futbolistas del mundo del fútbol. Crea tu propio club dentro y fuera
+            del campo y dales equipamiento personalizado, insignias y un estadio
+            de FUT completo en el que poder dejar tu huella, y haz que equipo
+            juegue partidos contra la IA u otros jugadores de la comunidad FUT.
+            Además, da la bienvenida a algunos de los jugadores más memorables
+            del fútbol en forma de nuevos héroes de FUT: ¡algunas de estas
+            leyendas del fútbol ahora regresan al campo!
+          </p>
+          <p>
+            <b>Autenticidad sin rival:</b> juega con los mejores jugadores del
+            mundo en las competiciones mundiales más importantes, como la
+            icónica UEFA Champions League, la UEFA Europa League, la nueva UEFA
+            Europa Conference League, la CONMEBOL Libertadores, la CONMEBOL
+            Sudamericana, la Premier League, la Bundesliga, LaLiga Santander y
+            otras muchas más.
+          </p>
+          <p>
+            <b>Multiplataforma:</b> totalmente multiplataforma, juega online con
+            tus amigos y los mejores jugadores del mundo sin importar la
+            plataforma. Crea y comparte contenido personalizado entre las
+            distintas plataformas, incluyendo estadios, jugadores, equipos y
+            mucho más, gracias a la academia.
+          </p>
         </div>
       </div>
     </div>
