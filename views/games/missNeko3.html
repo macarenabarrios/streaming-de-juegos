@@ -13,10 +13,11 @@
     <title>Playpalooza - Miss Neko 3</title>
   </head>
   <body>
+    <!-- INICIO NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../../index.html">
             <img
               src="../../assets/img/playpaloozalogoanimated.gif"
               alt="Playpalooza"
@@ -25,7 +26,11 @@
               class="rounded-circle"
             />
           </a>
-          <a class="navbar-brand titulo text-light" href="#">PLAYPALOOZA</a>
+          <a
+            class="tituloPagina navbar-brand titulo text-light"
+            href="../../index.html"
+            >PLAYPALOOZA</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -54,12 +59,32 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">ACCION Y AVENTURAS</a>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/index.html"
+                        >ACCION Y AVENTURAS</a
+                      >
                     </li>
-                    <li><a class="dropdown-item" href="#">DEPORTES</a></li>
-                    <li><a class="dropdown-item" href="#">PUZZLE</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">OTROS</a></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/deportes/index.html"
+                        >DEPORTES</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../categories/puzzle/index.html"
+                        >PUZZLE</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../error404.html">OTROS</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -72,25 +97,31 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">UNETE!</a>
+                  <a class="nav-link text-light" href="../suscription.html"
+                    >UNETE!</a
+                  >
                 </li>
               </ul>
             </div>
-            <form class="d-flex" role="search">
+            <form action="../error404.html" class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar"
                 aria-label="Search"
+                minlength="2"
+                maxlength="20"
+                pattern="[a-zA-Z\s]+"
+                required
               />
-              <button class="btn btn-outline-success" type="submit">
-                BUSCAR
-              </button>
+              <button class="botonBuscar" type="submit">BUSCAR</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+    <!-- FIN DEL NAVBAR -->
+    <!-- INICIO MODAL LOGIN -->
     <div
       class="modal fade"
       id="loginModal"
@@ -105,23 +136,29 @@
             <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="./error404.html">
               <div class="form-group">
                 <label for="username">Nombre de Usuario</label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control inputLogin"
                   id="username"
-                  placeholder="Nombre de Usuario"
+                  placeholder="Ingresa tu nombre de usuario"
+                  minlength="2"
+                  maxlength="20"
+                  pattern="[a-zA-Z\s]+"
+                  required
                 />
               </div>
               <div class="form-group">
                 <label for="password">Contraseña</label>
                 <input
                   type="password"
-                  class="form-control"
+                  class="form-control inputLogin"
                   id="password"
-                  placeholder="Contraseña"
+                  placeholder="Ingresa tu contraseña"
+                  pattern=".{8,}"
+                  required
                 />
               </div>
               <div class="text-center">
@@ -132,11 +169,12 @@
         </div>
       </div>
     </div>
-
+    <!-- FIN MODAL LOGIN -->
     <!-- ===========   DESCRIPCION JUEGO   =========== -->
-    <div class="aboutgame container mt-5 mb-5" id="aboutGame">
-      <div class="row">
-        <div class="col-9 mt-5 fs-1">
+    <div class="container-fluid mt-5 mb-5">
+      <div class="row flex-wrap ms-lg-0">
+        <!-- ===========   COLUMNA 1   =========== -->
+        <div class="col-12 fs-1">
           <h1 class="tituloJuego fs-1" id="tituloJuego">
             <img
               src="../../assets/img/logotypes/missNeko3.png"
@@ -146,8 +184,9 @@
             MISS NEKO 3
           </h1>
         </div>
-        <div class="descripcionJuego col-5 mt-5">
-          <span class="d-block mb-2"><b>ACERCA DE ESTE JUEGO</b></span>
+        <!-- ===========   COLUMNA 2   =========== -->
+        <div class="descripcionJuego col-sm-12 col-md-6 mt-5">
+          <span class="d-block mb-2 fs-5"><b>ACERCA DE ESTE JUEGO</b></span>
           <p class="mt-4">
             Damas y caballeros, bienvenidos a la ciudad psicodélica: ¡Neko City
             #96572! ¡Todas las cosas buenas que deseas sucederán aquí!
@@ -158,24 +197,21 @@
             para hacer milagros!
           </p>
           <p class="mt-5"><b>FECHA DE LANZAMIENTO:</b> 18 diciembre 2022</p>
-          <a
-            href="../suscription.html"
-            class="suscribeBtn col-6 mt-5 btn btn-primary"
-            >JUGAR AHORA 🎮</a
-          >
-        </div>
-        <div class="col-6 ms-5 mb-5">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              class="embed-responsive-item"
-              width="640"
-              height="480"
-              src="https://www.youtube.com/embed/7gc_RQgyk-Q?si=wORaZuaNSiCgr_6j"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+          <div class="text-center text-lg-start text-md-start">
+            <a
+              href="../suscription.html"
+              class="suscribeBtn mt-4 mb-sm-5 mb-md-5 btn btn-primary"
+              >JUGAR AHORA 🎮</a
+            >
           </div>
+        </div>
+        <!-- ===========   VIDEO   =========== -->
+        <div class="video-responsive col-sm-12 col-md-5 mb-5 mt-4">
+          <video
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/256913135/movie480_vp9.webm?t=1666859078"
+            class="d-block w-100 embed-responsive-item"
+            controls
+          ></video>
         </div>
       </div>
     </div>
@@ -358,6 +394,7 @@
         </ul>
       </footer>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
