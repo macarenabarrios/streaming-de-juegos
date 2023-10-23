@@ -96,3 +96,12 @@ body {
 .inputLogin::placeholder {
     color: lightgray !important;
 }
+
+@media (max-width: 767px) {
+    .encabezado {
+        font-size: 1.2rem;
+    }
+    .card-img-top {
+        max-width: 40%;
+    }
+}
