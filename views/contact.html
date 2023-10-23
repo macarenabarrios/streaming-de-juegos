@@ -22,10 +22,11 @@
             class="rounded-circle">
         </a>
         <a class="tituloPagina navbar-brand titulo text-light" href="../index.html">PLAYPALOOZA</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="container ">
@@ -65,34 +66,36 @@
   <!-- FIN DEL NAVBAR -->
 
   <!-- INICIO DE CONTENIDO PRINCIPAL -->
-  <div class="contacto container mt-5">
-    <h1>Contactanos</h1>
-    <div class="row">
-      <div class="col-md-6">
-        <p>¡En Playpalooza, tu diversión es nuestra misión! Convierte tus preguntas en victorias: ¡contáctanos y desata
-          el poder de los videojuegos hoy!</p>
-        <p><strong>Correo electrónico:</strong> playpalooza@gmail.com</p>
-        <p><strong>Teléfono:</strong> 381-5783030</p>
-
-        <h3>Nos encontramos en:</h3>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102220503246!2d-65.20977672456311!3d-26.836700876692507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1697492860275!5m2!1ses-419!2sar"></iframe>
+  <main>
+    <div class="contacto container mt-5">
+      <h1>Contactanos</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <p>¡En Playpalooza, tu diversión es nuestra misión! Convierte tus preguntas en victorias: ¡contáctanos y
+            desata
+            el poder de los videojuegos hoy!</p>
+          <p><strong>Correo electrónico:</strong> playpalooza@gmail.com</p>
+          <p><strong>Teléfono:</strong> 381-5783030</p>
+          <h3>Nos encontramos en:</h3>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102220503246!2d-65.20977672456311!3d-26.836700876692507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1697492860275!5m2!1ses-419!2sar"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="../assets/img/estrella.png" class="img-fluid" alt="Estrella">
         </div>
       </div>
-      <div class="col-md-6">
-        <img src="../assets/img/estrella.png" class="img-fluid" alt="Estrella">
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <a href="" class="botonConsulta btn btn-primary text-center" data-bs-toggle="modal"
+            data-bs-target="#consultaModal">Queres dejarnos una consulta?</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col d-flex justify-content-center">
-        <a href="" class="botonConsulta btn btn-primary text-center" data-bs-toggle="modal"
-          data-bs-target="#consultaModal">Queres dejarnos una consulta?</a>
-      </div>
-    </div>
-  </div>
+  </main>
   <!-- FIN DEL CONTENIDO PRINCIPAL -->
 
   <!-- INICIO DEL FOOTER -->
@@ -195,18 +198,19 @@
         </div>
         <div class="modal-body">
           <form action="./error404.html">
-            <label for="username">Nombre de Usuario</label>
-            <input type="text" class="form-control inputLogin" id="username" placeholder="Ingresa tu nombre de usuario"
-              minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
-          </div>
-          <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input type="password" class="form-control inputLogin" id="password" placeholder="Ingresa tu contraseña"
-              pattern=".{8,}" required>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-          </div>
+            <div class="form-group">
+              <label for="username">Nombre de Usuario</label>
+              <input type="text" class="form-control inputLogin" id="username"
+                placeholder="Ingresa tu nombre de usuario" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input type="password" class="form-control inputLogin" id="password" placeholder="Ingresa tu contraseña"
+                pattern=".{8,}" required>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
           </form>
         </div>
       </div>
@@ -226,7 +230,8 @@
           <form action="./error404.html">
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Nombre y Apellido:</label>
-              <input type="text" class="form-control" id="recipient-name" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
+              <input type="text" class="form-control" id="recipient-name" minlength="2" maxlength="20"
+                pattern="[a-zA-Z\s]+" required>
             </div>
             <div class="mb-3">
               <label for="recipient-email" class="col-form-label">E-Mail:</label>

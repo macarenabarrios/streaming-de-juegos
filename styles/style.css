@@ -17,13 +17,13 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    }
-    
-    .botonBuscar:hover {
+}
+
+.botonBuscar:hover {
     background-color: rgb(157, 92, 214);
     color: white;
     font-weight: bolder;
-    }
+}
 
 .tituloPagina {
     font-family: 'Bebas Neue', sans-serif !important;
@@ -79,7 +79,7 @@
     color: lightgray !important;
 }
 
- /* =========================================================================== */
+/* =========================================================================== */
 /* AGREGADO DE ESTILOS AL BODY Y LA PAG PPAL */
 body {
     background: rgb(100, 32, 160);
@@ -101,7 +101,9 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#carouselExampleCaptions, #carouselExampleCaptions2, #carouselExampleCaptions3 {
+#carouselExampleCaptions,
+#carouselExampleCaptions2,
+#carouselExampleCaptions3 {
     width: 100%;
     max-width: 1000px;
     margin: auto;

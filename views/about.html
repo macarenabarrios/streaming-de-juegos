@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+    <!-- INICIO DEL NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-lg bg-black">
             <div class="container-fluid">
@@ -26,6 +28,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="container ">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly">
@@ -35,11 +38,10 @@
                                     CATEGORIAS
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./categories/index.html">ACCION Y AVENTURAS</a>
+                                    <li><a class="dropdown-item" href="../categories/">ACCION Y AVENTURAS</a></li>
+                                    <li><a class="dropdown-item" href="../categories/deportes/index.html">DEPORTES</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="./categories/deportes/index.html">DEPORTES</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="./categories/puzzle/index.html">PUZZLE</a></li>
+                                    <li><a class="dropdown-item" href="../categories/puzzle/index.html">PUZZLE</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -51,19 +53,22 @@
                                     href="">LOGIN</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#">UNETE!</a>
+                                <a class="nav-link text-light" href="./suscription.html">UNETE!</a>
                             </li>
                         </ul>
                     </div>
                     <form action="./error404.html" class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" minlength="2"
-                          maxlength="20" pattern="[a-zA-Z\s]+"
-                          required>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+                            minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
                         <button class="botonBuscar" type="submit">BUSCAR</button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- FIN DEL NAVBAR -->
+
+    <!-- INICIO DE CONTENIDO PRINCIPAL -->
     <main>
         <div class="container text-light mt-5 mb-5">
             <div class="row justify-content-center text-center">
@@ -98,42 +103,17 @@
             </div>
         </div>
     </main>
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
-                </div>
-                <div class="modal-body">
-                    <form action="./error404.html">
-                        <label for="username">Nombre de Usuario</label>
-                        <input type="text" class="form-control inputLogin" id="username" placeholder="Ingresa tu nombre de usuario"
-                          minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" class="form-control inputLogin" id="password" placeholder="Ingresa tu contraseña"
-                          pattern=".{8,}" required>
-                      </div>
-                      <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- FIN DEL CONTENIDO PRINCIPAL -->
+
+    <!-- INICIO DEL FOOTER -->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center border-top py-3 my-4 ">
-            <!-- INFO DEL SITIO -->
             <div class="col-12 justify-content-center col-md-12 col-lg-4 d-flex align-items-center">
                 <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" href="">
                     <img src="./assets/img/playpaloozalogo.png" class="bi" width="45" alt="">
                 </a>
                 <span class="mb-3 mb-md-0 text-light">PLAYPALOOZA, 2023 &copy;</span>
             </div>
-
-            <!-- REDES SOCIALES -->
             <ul
                 class="nav col-12 justify-content-center col-md-6 justify-content-md-evenly   col-lg-4 justify-content-lg-center    list-unstyled d-flex">
                 <li class="ms-3">
@@ -207,8 +187,6 @@
                     </a>
                 </li>
             </ul>
-
-            <!-- LINKS REFERIDOS -->
             <ul class="nav col-12 justify-content-center col-md-6 my-3 col-lg-4">
                 <li class="nav-item">
                     <a class="nav-link px-3 text-light " href="./about.html">Sobre Nosotros</a>
@@ -217,14 +195,40 @@
                     <a class="nav-link px-3 text-light " href="./contact.html">Contacto</a>
                 </li>
             </ul>
-
-
-
-
         </footer>
     </div>
+    <!-- FIN DEL FOOTER -->
 
-
+    <!-- INICIO MODAL LOGIN -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="./error404.html">
+                        <div class="form-group">
+                            <label for="username">Nombre de Usuario</label>
+                            <input type="text" class="form-control inputLogin" id="username"
+                                placeholder="Ingresa tu nombre de usuario" minlength="2" maxlength="20"
+                                pattern="[a-zA-Z\s]+" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control inputLogin" id="password"
+                                placeholder="Ingresa tu contraseña" pattern=".{8,}" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL LOGIN -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
