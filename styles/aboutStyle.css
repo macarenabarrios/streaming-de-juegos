@@ -31,8 +31,8 @@
 }
 
 body {
-    background: rgb(100,32,160);
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    background: rgb(100, 32, 160);
+    background: linear-gradient(0deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
 }
 
 .encabezado {
@@ -94,6 +94,7 @@ body {
     .encabezado {
         font-size: 1.2rem;
     }
+
     .card-img-top {
         max-width: 40%;
     }

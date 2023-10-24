@@ -33,7 +33,7 @@
 
 body {
     background: rgb(100, 32, 160);
-    background: linear-gradient(236deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
+    background: linear-gradient(0deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
 }
 
 .contacto {
@@ -158,6 +158,6 @@ body {
 
 @media (max-width: 768px) {
     .contacto .row .col-md-6 img {
-    display: none;
+        display: none;
     }
 }

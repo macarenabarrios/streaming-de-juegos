@@ -32,8 +32,8 @@
 }
 
 body {
-    background: rgb(100,32,160);
-    background: linear-gradient(236deg, rgba(100,32,160,1) 0%, rgba(1,0,9,1) 100%);
+    background: rgb(100, 32, 160);
+    background: linear-gradient(0deg, rgba(100, 32, 160, 1) 0%, rgba(1, 0, 9, 1) 100%);
 }
 
 #loginModal .modal-content {
@@ -84,5 +84,5 @@ body {
 
 .botonVolver {
     font-family: 'Pixelify Sans', sans-serif !important;
-    font-size: 2rem !important; 
+    font-size: 2rem !important;
 }
