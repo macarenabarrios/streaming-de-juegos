@@ -1,281 +1,448 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/gamesStyle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Playpalooza - Counter Strike 2</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../styles/gamesStyle.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <title>Playpalooza - Counter Strike 2<< /title>
-</head>
-
-<body>
-  <!-- INICIO NAVBAR -->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-black">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html">
-          <img src="../../assets/img/playpaloozalogoanimated.gif" alt="Playpalooza" width="86" height="86"
-            class="rounded-circle" />
-        </a>
-        <a class="tituloPagina navbar-brand titulo text-light" href="../../index.html">PLAYPALOOZA</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="container">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  CATEGORIAS
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="../categories/accionyavent1.html">ACCION Y AVENTURAS</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../categories/sports1.html">DEPORTES</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../categories/puzzle1.html">PUZZLE</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../error404.html">OTROS</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" data-bs-toggle="modal" data-bs-target="#loginModal" href="">LOGIN</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="../suscription.html">UNETE!</a>
-              </li>
-            </ul>
+  <body>
+    <!-- INICIO NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+            <img
+              src="../../assets/img/playpaloozalogoanimated.gif"
+              alt="Playpalooza"
+              width="86"
+              height="86"
+              class="rounded-circle"
+            />
+          </a>
+          <a
+            class="tituloPagina navbar-brand titulo text-light"
+            href="../../index.html"
+            >PLAYPALOOZA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CATEGORIAS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../categories/accionyavent1.html"
+                        >ACCION Y AVENTURAS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../categories/sports1.html"
+                        >DEPORTES</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../categories/puzzle1.html"
+                        >PUZZLE</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../error404.html">OTROS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                    href=""
+                    >LOGIN</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="../suscription.html"
+                    >UNETE!</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <form action="../error404.html" class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                minlength="2"
+                maxlength="20"
+                pattern="[a-zA-Z\s]+"
+                required
+              />
+              <button class="botonBuscar" type="submit">BUSCAR</button>
+            </form>
           </div>
-          <form action="../error404.html" class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" minlength="2"
-              maxlength="20" pattern="[a-zA-Z\s]+" required />
-            <button class="botonBuscar" type="submit">BUSCAR</button>
-          </form>
         </div>
-      </div>
-    </nav>
-  </header>
-  <!-- FIN DEL NAVBAR -->
-  <!-- INICIO MODAL LOGIN -->
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
-        </div>
-        <div class="modal-body">
-          <form action="./error404.html">
-            <div class="form-group">
-              <label for="username">Nombre de Usuario</label>
-              <input type="text" class="form-control inputLogin" id="username"
-                placeholder="Ingresa tu nombre de usuario" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+"
-                required />
-            </div>
-            <div class="form-group">
-              <label for="password">Contraseña</label>
-              <input type="password" class="form-control inputLogin" id="password" placeholder="Ingresa tu contraseña"
-                pattern=".{8,}" required />
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">Ingresar</button>
-            </div>
-          </form>
+      </nav>
+    </header>
+    <!-- FIN DEL NAVBAR -->
+    <!-- INICIO MODAL LOGIN -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+          </div>
+          <div class="modal-body">
+            <form action="./error404.html">
+              <div class="form-group">
+                <label for="username">Nombre de Usuario</label>
+                <input
+                  type="text"
+                  class="form-control inputLogin"
+                  id="username"
+                  placeholder="Ingresa tu nombre de usuario"
+                  minlength="2"
+                  maxlength="20"
+                  pattern="[a-zA-Z\s]+"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control inputLogin"
+                  id="password"
+                  placeholder="Ingresa tu contraseña"
+                  pattern=".{8,}"
+                  required
+                />
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- FIN MODAL LOGIN -->
-  <!-- ===========   DESCRIPCION JUEGO   =========== -->
-  <div class="container-fluid mt-5 mb-5">
-    <div class="row flex-wrap ms-lg-0">
-      <!-- ===========   COLUMNA 1   =========== -->
-      <div class="col-12 fs-1">
-        <h1 class="tituloJuego fs-1" id="tituloJuego">
-          <img src="../../assets/img/logotypes/counterStrike.png" class="gameLogotype img-fluid" alt="..." />
-          COUNTER STRIKE 2
-        </h1>
-      </div>
-      <!-- ===========   COLUMNA 2   =========== -->
-      <div class="descripcionJuego col-sm-12 col-md-6 mt-5">
-        <span class="d-block mb-2 fs-5"><b>ACERCA DE ESTE JUEGO</b></span>
-        <p class="mt-4">
-          Disfruta del juego de acción en línea n° 1 en el mundo. Sumérgete en
-          el fragor de la guerra antiterrorista más realista con este
-          archiconocido juego por equipos. Alíate con compañeros para superar
-          misiones estratégicas, asalta bases enemigas, rescata rehenes, y
-          recuerda que tu personaje contribuye al éxito del equipo y
-          viceversa.
-        </p>
-        <p class="mt-5"><b>FECHA DE LANZAMIENTO:</b> 21 ago 2012</p>
-        <div class="text-center text-lg-start text-md-start">
-          <a href="../suscription.html" class="suscribeBtn mt-4 mb-sm-5 mb-md-5 btn btn-primary">JUGAR AHORA 🎮</a>
+    <!-- FIN MODAL LOGIN -->
+    <!-- ===========   DESCRIPCION JUEGO   =========== -->
+    <div class="container-fluid mt-5 mb-5">
+      <div class="row flex-wrap ms-lg-0">
+        <!-- ===========   COLUMNA 1   =========== -->
+        <div class="col-12 fs-1">
+          <h1 class="tituloJuego fs-1" id="tituloJuego">
+            <img
+              src="../../assets/img/logotypes/counterStrike.png"
+              class="gameLogotype img-fluid"
+              alt="..."
+            />
+            COUNTER STRIKE 2
+          </h1>
+        </div>
+        <!-- ===========   COLUMNA 2   =========== -->
+        <div class="descripcionJuego col-sm-12 col-md-6 mt-5">
+          <span class="d-block mb-2 fs-5"><b>ACERCA DE ESTE JUEGO</b></span>
+          <p class="mt-4">
+            Disfruta del juego de acción en línea n° 1 en el mundo. Sumérgete en
+            el fragor de la guerra antiterrorista más realista con este
+            archiconocido juego por equipos. Alíate con compañeros para superar
+            misiones estratégicas, asalta bases enemigas, rescata rehenes, y
+            recuerda que tu personaje contribuye al éxito del equipo y
+            viceversa.
+          </p>
+          <p class="mt-5"><b>FECHA DE LANZAMIENTO:</b> 21 ago 2012</p>
+          <div class="text-center text-lg-start text-md-start">
+            <a
+              href="../suscription.html"
+              class="suscribeBtn mt-4 mb-sm-5 mb-md-5 btn btn-primary"
+              >JUGAR AHORA 🎮</a
+            >
+          </div>
+        </div>
+        <!-- ===========   IMAGEN   =========== -->
+        <div class="video-responsive col-sm-12 col-md-5 mb-5 mt-4">
+          <video
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/256972298/movie480_vp9.webm?t=1696005467"
+            class="d-block w-100 embed-responsive-item"
+            controls
+          ></video>
+        </div>
+        <!-- ===========   FILA   =========== -->
+        <div class="col me-lg-5">
+          <p>
+            Durante las dos últimas décadas, Counter‑Strike ha proporcionado una
+            experiencia competitiva de primer nivel para los millones de
+            jugadores de todo el mundo que contribuyeron a darle forma. Ahora el
+            próximo capítulo en la historia de CS está a punto de comenzar.
+            Hablamos de Counter‑Strike 2.
+          </p>
+          <p>
+            Siendo una actualización gratuita de CS:GO, Counter‑Strike 2 es el
+            avance técnico más importante en la historia de esta franquicia.
+            Desarrollado con el motor Source 2, Counter‑Strike 2 se ha
+            modernizado con representación basada en la física (PBR, por sus
+            siglas en inglés), conexión a la red de última generación y
+            herramientas actualizadas del Workshop de la comunidad.
+          </p>
+
+          <p>
+            Además del clásico estilo de juego centrado en objetivos del que
+            Counter‑Strike fue pionero en 1999, esta nueva entrega cuenta con
+            las siguientes características:
+          </p>
+          <p>
+            <b
+              >🔺 Calificaciones de CS completamente nuevas dentro del modo
+              actualizado Premier.
+            </b>
+          </p>
+          <p>
+            <b>🔺 Clasificaciones globales y regionales.</b>
+          </p>
+          <p>
+            <b>🔺 Mapas actualizados y renovados.</b>
+          </p>
+          <p>
+            <b>🔺 Granadas de humo dinámicas y revolucionarias.</b>
+          </p>
+          <p>
+            <b>🔺 Jugabilidad independiente de la frecuencia de tics.</b>
+          </p>
+          <p>
+            <b>🔺 Efectos de audio y sonido rediseñados.</b>
+          </p>
+          <p>
+            <b>🔺 Todos los objetos de CS:GO presentes en CS2.</b>
+          </p>
         </div>
       </div>
-      <!-- ===========   IMAGEN   =========== -->
-      <div class="video-responsive col-sm-12 col-md-5 mb-5 mt-4">
-        <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256972298/movie480_vp9.webm?t=1696005467"
-          class="d-block w-100 embed-responsive-item" controls></video>
-      </div>
-      <!-- ===========   FILA   =========== -->
-      <div class="col me-lg-5">
-        <p>
-          Durante las dos últimas décadas, Counter‑Strike ha proporcionado una
-          experiencia competitiva de primer nivel para los millones de
-          jugadores de todo el mundo que contribuyeron a darle forma. Ahora el
-          próximo capítulo en la historia de CS está a punto de comenzar.
-          Hablamos de Counter‑Strike 2.
-        </p>
-        <p>
-          Siendo una actualización gratuita de CS:GO, Counter‑Strike 2 es el
-          avance técnico más importante en la historia de esta franquicia.
-          Desarrollado con el motor Source 2, Counter‑Strike 2 se ha
-          modernizado con representación basada en la física (PBR, por sus
-          siglas en inglés), conexión a la red de última generación y
-          herramientas actualizadas del Workshop de la comunidad.
-        </p>
-
-        <p>
-          Además del clásico estilo de juego centrado en objetivos del que
-          Counter‑Strike fue pionero en 1999, esta nueva entrega cuenta con
-          las siguientes características:
-        </p>
-        <p>
-          <b>🔺 Calificaciones de CS completamente nuevas dentro del modo
-            actualizado Premier.
-          </b>
-        </p>
-        <p>
-          <b>🔺 Clasificaciones globales y regionales.</b>
-        </p>
-        <p>
-          <b>🔺 Mapas actualizados y renovados.</b>
-        </p>
-        <p>
-          <b>🔺 Granadas de humo dinámicas y revolucionarias.</b>
-        </p>
-        <p>
-          <b>🔺 Jugabilidad independiente de la frecuencia de tics.</b>
-        </p>
-        <p>
-          <b>🔺 Efectos de audio y sonido rediseñados.</b>
-        </p>
-        <p>
-          <b>🔺 Todos los objetos de CS:GO presentes en CS2.</b>
-        </p>
-      </div>
     </div>
-  </div>
 
-  <!-- ===========   FOOTER   =========== -->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top py-3 my-4">
-      <!-- INFO DEL SITIO -->
-      <div class="col-12 justify-content-center col-md-12 col-lg-4 d-flex align-items-center">
-        <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" href="">
-          <img src="./assets/img/playpaloozalogo.png" class="bi" width="45" alt="" />
-        </a>
-        <span class="mb-3 mb-md-0 text-light">PLAYPALOOZA, 2023 &copy;</span>
-      </div>
+    <!-- ===========   FOOTER   =========== -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center border-top py-3 my-4"
+      >
+        <!-- INFO DEL SITIO -->
+        <div
+          class="col-12 justify-content-center col-md-12 col-lg-4 d-flex align-items-center"
+        >
+          <a
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            href=""
+          >
+            <img
+              src="./assets/img/playpaloozalogo.png"
+              class="bi"
+              width="45"
+              alt=""
+            />
+          </a>
+          <span class="mb-3 mb-md-0 text-light">PLAYPALOOZA, 2023 &copy;</span>
+        </div>
 
-      <!-- REDES SOCIALES -->
-      <ul
-        class="nav col-12 justify-content-center col-md-6 justify-content-md-evenly col-lg-4 justify-content-lg-center list-unstyled d-flex">
-        <li class="ms-3">
-          <a href="#" class="text-muted">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
-              <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
-                gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#fd5"></stop>
-                <stop offset=".328" stop-color="#ff543f"></stop>
-                <stop offset=".348" stop-color="#fc5245"></stop>
-                <stop offset=".504" stop-color="#e64771"></stop>
-                <stop offset=".643" stop-color="#d53e91"></stop>
-                <stop offset=".761" stop-color="#cc39a4"></stop>
-                <stop offset=".841" stop-color="#c837ab"></stop>
-              </radialGradient>
-              <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
-              </path>
-              <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
-                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#4168c9"></stop>
-                <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
-              </radialGradient>
-              <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
-              </path>
-              <path fill="#fff"
-                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
-              </path>
-              <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
-              <path fill="#fff"
-                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
-              </path>
-            </svg>
-          </a>
-        </li>
-        <li class="ms-3">
-          <a href="#" class="text-muted">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
-              <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
-              <path fill="#fff"
-                d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z">
-              </path>
-            </svg>
-          </a>
-        </li>
-        <li class="ms-3">
-          <a href="#" class="text-muted">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="40" viewBox="0,0,256,256">
-              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
-              </g>
-              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <g transform="scale(5.12,5.12)">
-                  <path
-                    d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
-                  </path>
+        <!-- REDES SOCIALES -->
+        <ul
+          class="nav col-12 justify-content-center col-md-6 justify-content-md-evenly col-lg-4 justify-content-lg-center list-unstyled d-flex"
+        >
+          <li class="ms-3">
+            <a href="#" class="text-muted">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="40"
+                height="40"
+                viewBox="0 0 48 48"
+              >
+                <radialGradient
+                  id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1"
+                  cx="19.38"
+                  cy="42.035"
+                  r="44.899"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#fd5"></stop>
+                  <stop offset=".328" stop-color="#ff543f"></stop>
+                  <stop offset=".348" stop-color="#fc5245"></stop>
+                  <stop offset=".504" stop-color="#e64771"></stop>
+                  <stop offset=".643" stop-color="#d53e91"></stop>
+                  <stop offset=".761" stop-color="#cc39a4"></stop>
+                  <stop offset=".841" stop-color="#c837ab"></stop>
+                </radialGradient>
+                <path
+                  fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                  d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
+                ></path>
+                <radialGradient
+                  id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2"
+                  cx="11.786"
+                  cy="5.54"
+                  r="29.813"
+                  gradientTransform="matrix(1 0 0 .6663 0 1.849)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#4168c9"></stop>
+                  <stop
+                    offset=".999"
+                    stop-color="#4168c9"
+                    stop-opacity="0"
+                  ></stop>
+                </radialGradient>
+                <path
+                  fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                  d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"
+                ></path>
+                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                <path
+                  fill="#fff"
+                  d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#" class="text-muted">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="40"
+                height="40"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#039be5"
+                  d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#" class="text-muted">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="40"
+                viewBox="0,0,256,256"
+              >
+                <g
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
                 </g>
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
+                <g
+                  fill="#ffffff"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
 
-      <!-- LINKS REFERIDOS -->
-      <ul class="nav col-12 justify-content-center col-md-6 my-3 col-lg-4">
-        <li class="nav-item">
-          <a class="nav-link px-3 text-light" href="./views/about.html">Sobre Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 text-light" href="./views/contact.html">Contacto</a>
-        </li>
-      </ul>
-    </footer>
-  </div>
+        <!-- LINKS REFERIDOS -->
+        <ul class="nav col-12 justify-content-center col-md-6 my-3 col-lg-4">
+          <li class="nav-item">
+            <a class="nav-link px-3 text-light" href="./views/about.html"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 text-light" href="./views/contact.html"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
