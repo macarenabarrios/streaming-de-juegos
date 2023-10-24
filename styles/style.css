@@ -110,6 +110,100 @@ body {
     margin: auto;
 }
 
+#carouselExampleCaptions .carousel-inner, #carouselExampleCaptions2 .carousel-inner, #carouselExampleCaptions3 {
+    animation-name: luces;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes luces {
+    from{
+        box-shadow: 4px 4px 20px rgb(228, 176, 228);
+    }
+    to{
+        box-shadow: 4px 4px 20px violet;
+    }
+}
+
 #titles {
     color: #fff;
+}
+
+/* ESTILO DE LISTA MULTICARD */
+#carouselListaMultiple .carousel-inner .carousel-item.active,
+#carouselListaMultiple .carousel-inner .carousel-item-next,
+#carouselListaMultiple .carousel-inner .carousel-item-prev{
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    #carouselListaMultiple .carousel-inner .carousel-item-end.active,
+    #carouselListaMultiple .carousel-inner .carousel-item-next{
+        transform: translateX(25%);
+    }
+
+    #carouselListaMultiple .carousel-inner .carousel-item-start.active,
+    #carouselListaMultiple .carousel-inner .carousel-item-prev{
+        transform: translateX(-25%);
+    }
+}
+
+#carouselListaMultiple .carousel-inner .carousel-item-end,
+#carouselListaMultiple .carousel-inner .carousel-item-start{
+    transform: translateX(0);
+}
+
+@media (max-width:767px){
+    #carouselListaMultiple .carousel-inner .carousel-item>div{ /*uso del combinador de hijo*/
+        display: none; /*que no se muestren multiples categorias*/
+    }
+    #carouselListaMultiple .carousel-inner .carousel-item>div:first-child{ /*uso de la pseudoclase; Representa el primer elemento entre un grupo de elementos hermanos*/
+        display: block; /*se muestran de a una las categorias en dispositivos pequeños*/
+    }
+
+    /* BOTONES */
+}
+
+.carousel#carouselListaMultiple{
+    width: 100%;
+    padding: 100px;
+}
+
+.carousel#carouselListaMultiple .card{
+    margin: 10px;
+    box-shadow: 2px 4px 20px;
+    transition: 100ms linear;
+}
+
+.carousel#carouselListaMultiple .card:hover{
+    transform: scale(103%);
+    box-shadow: 3px 3px 20px violet;
+}
+
+/* CONFIGURACION BARRA DE SCROLL */
+body::-webkit-scrollbar {
+    width: 20px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(205,0,255,1) 74%);    /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: blueviolet;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 3px solid white;  /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-track:hover{
+    background: rgb(0,0,0);
+    background: white
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(205,0,255,1) 74%);  /* color of the scroll thumb */
+    border: 3px solid blueviolet;
 }
