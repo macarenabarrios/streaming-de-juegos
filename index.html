@@ -8,17 +8,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>PlayPalooza</title>
-  <link rel="shortcut icon" href="./assets/img/playpaloozalogo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/estrella.png" type="image/x-icon">
 </head>
+
 <body>
+
+  <!-- INICIO DEL NAVBAR -->
   <header>
     <nav class="navbar navbar-expand-lg bg-black">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img src="./assets/img/playpaloozalogoanimated.gif" alt="Playpalooza" width="86" height="86"
             class="rounded-circle">
         </a>
-        <a class="tituloPagina navbar-brand titulo text-light" href="#">PLAYPALOOZA</a>
+        <a class="tituloPagina navbar-brand titulo text-light" href="./index.html">PLAYPALOOZA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,15 +30,18 @@
           <div class="container ">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   CATEGORIAS
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="./categories/index.html">ACCION Y AVENTURAS</a></li>
                   <li><a class="dropdown-item" href="./categories/deportes/index.html">DEPORTES</a></li>
                   <li><a class="dropdown-item" href="./categories/puzzle/index.html">PUZZLE</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">OTROS</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="./views/error404.html">OTROS</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -46,385 +52,306 @@
               </li>
             </ul>
           </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+          <form action="./views/error404.html" class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" minlength="2"
+              maxlength="20" pattern="[a-zA-Z\s]+"
+              required>
+            <button class="botonBuscar" type="submit">BUSCAR</button>
           </form>
         </div>
       </div>
     </nav>
   </header>
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+  <!-- FIN DEL NAVBAR -->
+
+  <!-- INICIO DE CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- INICIO CARROUSEL: Juego Sugerido ======================================================== -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <p class="text-uppercase fs-2" id="titles">mirá al futuro del fútbol</p>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256968596/movie_max_vp9.webm?t=1695138436"
+            class="d-block w-100" controls autoplay alt="...">
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="username">Nombre de Usuario</label>
-              <input type="text" class="form-control inputLogin" id="username" placeholder="Nombre de Usuario">
-            </div>
-            <div class="form-group">
-              <label for="password">Contraseña</label>
-              <input type="password" class="form-control inputLogin" id="password" placeholder="Contraseña">
-            </div>
-            <div class="text-center">
-              <a href="./views/error404.html" type="submit" class="btn btn-primary">Ingresar</a>
+        <div class="carousel-item ">
+          <img src="./assets/img/FC24-Juego Sugerido - Portada.jpg" class="d-block w-100 object-fit-scale  " alt="...">
+          <div class="carousel-caption d-none d-sm-block my-5">
+            <h5 class="text-black bg-white">La mejor tecnología</h5>
+            <p>
+              <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
+            </p>
           </div>
-          </form>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/FC24-Juego Sugerido - River.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-sm-block my-5">
+            <h5 class="text-black bg-white">Los grandes con los grandes</h5>
+            <p>
+              <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
+            </p>
+          </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </div>
 
+    <!-- INICIO CARROUSEL: BANNER ======================================================== -->
+    <div id="carouselExampleAutoplaying" class="carousel slide text-sm-center mt-5" data-bs-ride="carousel">
+      <p class="text-uppercase fs-3" id="titles">solo los audaces son capaces de ir por todo: Suscribete!</p>
 
-  <!-- INICIO CARROUSEL: Juego Sugerido ======================================================== -->
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <p class="text-uppercase fs-2" id="titles">mirá al futuro del fútbol</p>
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/banner-1.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-sm-block">
+            <p>
+              <a href="#" class="suscribirme btn btn-dark mt-3">Suscribirme</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/banner-2.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-sm-block">
+            <p>
+              <a href="#" class="suscribirme btn btn-dark mt-3">Suscribirme</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256968596/movie_max_vp9.webm?t=1695138436" class="d-block w-100"  controls autoplay alt="...">
+
+    <!-- DIVISOR -->
+    <div class="b-example-divider py-5"></div>
+
+    <!-- INICIO CARROUSEL: ESTRENOS ======================================================== -->
+    <div id="carouselExampleCaptions2" class="carousel slide">
+      <p class="text-uppercase fs-1" id="titles">estrenos</p>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
       </div>
-      <div class="carousel-item ">
-        <img src="./assets/img/FC24-Juego Sugerido - Portada.jpg" class="d-block w-100 object-fit-scale  " alt="...">
-        <div class="carousel-caption d-none d-sm-block my-5">
-          <h5 class="text-black bg-white">La mejor tecnología</h5>
-          <p>
-            <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
-          </p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/call-of-duty.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p>
+              <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/counter-strike.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p>
+              <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/elden-ring.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p>
+              <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/FC24-Estreno.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>
+              <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./assets/img/FC24-Juego Sugerido - River.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-sm-block my-5">
-          <h5 class="text-black bg-white">Los grandes con los grandes</h5>
-          <p>
-            <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
-          </p>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
+    <!-- DIVISOR -->
+    <div class="b-example-divider py-5"></div>
 
-  <!-- INICIO CARROUSEL: BANNER ======================================================== -->
-  <div
-    id="carouselExampleAutoplaying"
-    class="carousel slide text-sm-center mt-5"
-    data-bs-ride="carousel"
-  >
-    <p class="text-uppercase fs-3" id="titles">solo los audaces son capaces de ir por todo: Suscribete!</p>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="./assets/img/banner-1.png"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-sm-block">
-          <p>
-            <a href="#" class="suscribirme btn btn-dark mt-3">Suscribirme</a>
-          </p>
+    <!-- INICIO CARROUSEL: Categorias ======================================================== -->
+    <div id="carouselExampleCaptions3" class="carousel slide">
+      <p class="text-uppercase fs-1" id="titles">categorías</p>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/call-of-duty.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p>
+              <a href="#" class="btn btn-dark">ACCIÓN</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/counter-strike.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p>
+              <a href="#" class="btn btn-dark">SHOOTER</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/elden-ring.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <p>
+              <a href="#" class="btn btn-dark">AVENTURA</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/FC24-Estreno.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>
+              <a href="#" class="btn btn-dark">DEPORTES</a>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img
-          src="./assets/img/banner-2.png"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-sm-block">
-          <p>
-            <a href="#" class="suscribirme btn btn-dark mt-3">Suscribirme</a>
-          </p>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
- 
-  <!-- DIVISOR -->
-  <div class="b-example-divider py-5"></div>
- 
-  <!-- INICIO CARROUSEL: ESTRENOS ======================================================== -->
-  <div id="carouselExampleCaptions2" class="carousel slide">
-    <p class="text-uppercase fs-1" id="titles">estrenos</p>
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions2"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions2"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions2"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions2"
-        data-bs-slide-to="3"
-        aria-label="Slide 4"
-      ></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="./assets/img/call-of-duty.jpeg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <p>
-            <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="./assets/img/counter-strike.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <p>
-            <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="./assets/img/elden-ring.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <p>
-            <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/FC24-Estreno.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <p>
-            <a href="#" class="suscribirme btn btn-dark">Compar ahora</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleCaptions2"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleCaptions2"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </main>
+  <!-- FIN DEL CONTENIDO PRINCIPAL -->
 
-  <!-- DIVISOR -->
-  <div class="b-example-divider py-5"></div>
-
-  <!-- INICIO CARROUSEL: Categorias ======================================================== -->
-  <div id="carouselExampleCaptions3" class="carousel slide">
-    <p class="text-uppercase fs-1" id="titles">categorías</p>
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions3"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions3"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions3"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions3"
-        data-bs-slide-to="3"
-        aria-label="Slide 4"
-      ></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="./assets/img/call-of-duty.jpeg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <p>
-            <a href="#" class="btn btn-dark">ACCIÓN</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="./assets/img/counter-strike.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <p>
-            <a href="#" class="btn btn-dark">SHOOTER</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="./assets/img/elden-ring.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <p>
-            <a href="#" class="btn btn-dark">AVENTURA</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/FC24-Estreno.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <p>
-            <a href="#" class="btn btn-dark">DEPORTES</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleCaptions3"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleCaptions3"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-
-  <!-- ===========   AQUÍ COMIENZA EL FOOTER ===========================================================================
-    -El footer debe contar con al menos tres columnas, las cuales deberán contener como mínimo los siguientes elementos:
-        i- Logo del sitio
-        ii- Iconos de redes sociales
-        iii- Link que direccione a la página acerca de nosotros
-        iv- Link que direccionará a un formulario de contacto por consultas
-
-    -El comportamiento de las columnas deberá ser el siguiente:
-        a) Cuando el dispositivo sea pequeño mostrar una columna.
-        b) Cuando el dispositivo sea mediano mostrar dos o las tres columnas (optativo).
-        c) Cuando el dispositivo sea grande mostrar las tres columnas. -->
-
+  <!-- INICIO DEL FOOTER -->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center border-top py-3 my-4 ">
-      <!-- INFO DEL SITIO -->
       <div class="col-12 justify-content-center col-md-12 col-lg-4 d-flex align-items-center">
         <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" href="">
           <img src="./assets/img/playpaloozalogo.png" class="bi" width="45" alt="">
         </a>
         <span class="mb-3 mb-md-0 text-light">PLAYPALOOZA, 2023 &copy;</span>
       </div>
-
-      <!-- REDES SOCIALES -->
-      <ul class="nav col-12 justify-content-center col-md-6 justify-content-md-evenly   col-lg-4 justify-content-lg-center    list-unstyled d-flex">
+      <ul
+        class="nav col-12 justify-content-center col-md-6 justify-content-md-evenly   col-lg-4 justify-content-lg-center    list-unstyled d-flex">
         <li class="ms-3">
           <a href="#" class="text-muted">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
-              <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+              <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fd5"></stop>
+                <stop offset=".328" stop-color="#ff543f"></stop>
+                <stop offset=".348" stop-color="#fc5245"></stop>
+                <stop offset=".504" stop-color="#e64771"></stop>
+                <stop offset=".643" stop-color="#d53e91"></stop>
+                <stop offset=".761" stop-color="#cc39a4"></stop>
+                <stop offset=".841" stop-color="#c837ab"></stop>
+              </radialGradient>
+              <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+              </path>
+              <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#4168c9"></stop>
+                <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+              </radialGradient>
+              <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+              </path>
+              <path fill="#fff"
+                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+              </path>
+              <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+              <path fill="#fff"
+                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+              </path>
             </svg>
           </a>
         </li>
         <li class="ms-3">
           <a href="#" class="text-muted">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
-              <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+              <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
+              <path fill="#fff"
+                d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z">
+              </path>
             </svg>
           </a>
         </li>
         <li class="ms-3">
           <a href="#" class="text-muted">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="40" viewBox="0,0,256,256">
-              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path></g></g>
-              </svg>
+              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+              </g>
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                  </path>
+                </g>
+              </g>
+            </svg>
           </a>
         </li>
       </ul>
-
-      <!-- LINKS REFERIDOS -->
       <ul class="nav col-12 justify-content-center col-md-6 my-3 col-lg-4">
         <li class="nav-item">
           <a class="nav-link px-3 text-light " href="./views/about.html">Sobre Nosotros</a>
@@ -433,14 +360,39 @@
           <a class="nav-link px-3 text-light " href="./views/contact.html">Contacto</a>
         </li>
       </ul>
-
-
-
-
     </footer>
   </div>
-  
+  <!-- FIN DEL FOOTER -->
 
+  <!-- INICIO MODAL LOGIN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+        </div>
+        <div class="modal-body">
+          <form action="./views/error404.html">
+            <div class="form-group">
+              <label for="username">Nombre de Usuario</label>
+              <input type="text" class="form-control inputLogin" id="username" placeholder="Ingresa tu nombre de usuario"
+                minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input type="password" class="form-control inputLogin" id="password" placeholder="Ingresa tu contraseña"
+                pattern=".{8,}" required>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL LOGIN -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
