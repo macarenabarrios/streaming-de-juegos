@@ -10,11 +10,12 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>Playpalooza - Suscribirse</title>
 </head>
+
 <body>
 
   <!-- INICIO DEL NAVBAR -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-black">
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
           <img src="../assets/img/playpaloozalogoanimated.gif" alt="Playpalooza" width="86" height="86"
@@ -53,8 +54,7 @@
           </div>
           <form action="./error404.html" class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" minlength="2"
-              maxlength="20" pattern="[a-zA-Z\s]+"
-              required>
+              maxlength="20" pattern="[a-zA-Z\s]+" required>
             <button class="botonBuscar" type="submit">BUSCAR</button>
           </form>
         </div>
@@ -62,74 +62,90 @@
     </nav>
   </header>
   <!-- FIN DEL NAVBAR -->
-
+<br>
+<br>
+<br>
+<br>
+<br>
   <!-- INICIO DE CONTENIDO PRINCIPAL -->
-<main>
-<div class="container mt-5">
-    <div class="row">
+  <main>
+    <div class="container mt-5">
+      <div class="row">
         <div class="col">
-            <div class="cardSuscripcion card bg-transparent">
-                <img src="../assets/img/PLAY-FREE.png" class="card-img-top" alt="FREE">
-                <div class="card-body">
-                  <p class="card-text"><ul>
-                    <li>DEMOS DE JUEGOS</li>
-                    <li>NOTICIAS</li>
-                  </ul></p>
-                  <button type="button" class="botonSuscribirse btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">Suscribirse Ahora!
-                  </button>
-                </div>
-              </div>
+          <div class="cardSuscripcion card bg-transparent">
+            <img src="../assets/img/PLAY-FREE.png" class="card-img-top" alt="FREE">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>DEMOS DE JUEGOS</li>
+                <li>NOTICIAS</li>
+              </ul>
+              </p>
+              <button type="button" class="botonSuscribirse btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#registroModal">Suscribirse Ahora!
+              </button>
+            </div>
+          </div>
         </div>
         <div class="col">
-            <div class="cardSuscripcion card bg-transparent">
-                <img src="../assets/img/PLAY-NOVATO.png" class="card-img-top" alt="NOVATO">
-                <div class="card-body">
-                  <p class="card-text"><ul>
-                    <li>DEMOS DE JUEGOS</li>
-                    <li>NOTICIAS</li>
-                    <li>ACCESO A 10 JUEGOS</li>
-                  </ul></p>
-                  <button type="button" class="botonSuscribirse btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">Suscribirse Ahora!
-                  </button>
-                </div>
-              </div>
+          <div class="cardSuscripcion card bg-transparent">
+            <img src="../assets/img/PLAY-NOVATO.png" class="card-img-top" alt="NOVATO">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>DEMOS DE JUEGOS</li>
+                <li>NOTICIAS</li>
+                <li>ACCESO A 10 JUEGOS</li>
+              </ul>
+              </p>
+              <button type="button" class="botonSuscribirse btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#registroModal">Suscribirse Ahora!
+              </button>
+            </div>
+          </div>
         </div>
         <div class="col">
-            <div class="cardSuscripcion card bg-transparent">
-                <img src="../assets/img/PLAY-HEROE.png" class="card-img-top" alt="HEROE">
-                <div class="card-body">
-                  <p class="card-text"><ul>
-                    <li>DEMOS DE JUEGOS</li>
-                    <li>NOTICIAS</li>
-                    <li>ACCESO A 20 JUEGOS</li>
-                    <li>ACCESO ANTICIPADO A BETAS</li>
-                    <li>DESCUENTOS EXCLUSIVOS</li>
-                  </ul></p>
-                  <button type="button" class="botonSuscribirse btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">Suscribirse Ahora!
-                  </button>
-                </div>
-              </div>
+          <div class="cardSuscripcion card bg-transparent">
+            <img src="../assets/img/PLAY-HEROE.png" class="card-img-top" alt="HEROE">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>DEMOS DE JUEGOS</li>
+                <li>NOTICIAS</li>
+                <li>ACCESO A 20 JUEGOS</li>
+                <li>ACCESO ANTICIPADO A BETAS</li>
+                <li>DESCUENTOS EXCLUSIVOS</li>
+              </ul>
+              </p>
+              <button type="button" class="botonSuscribirse btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#registroModal">Suscribirse Ahora!
+              </button>
+            </div>
+          </div>
         </div>
         <div class="col">
-            <div class="cardSuscripcion card bg-transparent">
-                <img src="../assets/img/PLAY-MAESTRO.png" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-text"><ul>
-                    <li>DEMOS DE JUEGOS</li>
-                    <li>NOTICIAS</li>
-                    <li>ACCESO A TODO EL CATALOGO DE JUEGOS</li>
-                    <li>ACCESO ANTICIPADO A BETAS</li>
-                    <li>DESCUENTOS EXCLUSIVOS</li>
-                    <li>POSIBILIDAD DE CHATEAR CON DESARROLLADORES</li>
-                  </ul></p>
-                  <button type="button" class="botonSuscribirse btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">Suscribirse Ahora!
-                  </button>
-                </div>
-              </div>
+          <div class="cardSuscripcion card bg-transparent">
+            <img src="../assets/img/PLAY-MAESTRO.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>DEMOS DE JUEGOS</li>
+                <li>NOTICIAS</li>
+                <li>ACCESO A TODO EL CATALOGO DE JUEGOS</li>
+                <li>ACCESO ANTICIPADO A BETAS</li>
+                <li>DESCUENTOS EXCLUSIVOS</li>
+                <li>POSIBILIDAD DE CHATEAR CON DESARROLLADORES</li>
+              </ul>
+              </p>
+              <button type="button" class="botonSuscribirse btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#registroModal">Suscribirse Ahora!
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</main>
+  </main>
   <!-- FIN DEL CONTENIDO PRINCIPAL -->
 
   <!-- INICIO DEL FOOTER -->
@@ -223,40 +239,42 @@
   <!-- FIN DEL FOOTER -->
 
   <!-- INCIO MODAL SUSCRIPCION -->
-<div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="./error404.html">
-          <div class="form-group mt-3">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
-          </div>
-          <div class="form-group mt-3">
-            <label for="apellido">Apellido</label>
-            <input type="text" class="form-control" id="apellido" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
-          </div>
-          <div class="form-group mt-3">
-            <label for="email">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="form-group mt-3">
-            <label for="contrasena">Contraseña</label>
-            <input type="password" class="form-control" id="contrasena" pattern=".{8,}" required>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary mt-3">Crear Cuenta</button>
-          </div>
-        </form>
+  <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="./error404.html">
+            <div class="form-group mt-3">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+"
+                required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+"
+                required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="contrasena">Contraseña</label>
+              <input type="password" class="form-control" id="contrasena" pattern=".{8,}" required>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary mt-3">Crear Cuenta</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- FIN DEL MODAL SUSCRIPCION -->
+  <!-- FIN DEL MODAL SUSCRIPCION -->
 
   <!-- INICIO MODAL LOGIN -->
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
@@ -270,8 +288,8 @@
           <form action="./error404.html">
             <div class="form-group">
               <label for="username">Nombre de Usuario</label>
-              <input type="text" class="form-control inputLogin" id="username" placeholder="Ingresa tu nombre de usuario"
-                minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
+              <input type="text" class="form-control inputLogin" id="username"
+                placeholder="Ingresa tu nombre de usuario" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+" required>
             </div>
             <div class="form-group">
               <label for="password">Contraseña</label>

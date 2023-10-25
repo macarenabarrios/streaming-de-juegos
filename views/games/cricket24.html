@@ -1,459 +1,288 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/gamesStyle.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="../../assets/img/estrella.png" type="image/x-icon">
-    <title>Playpalooza - CRICKET 24</title>
-  </head>
 
-  <body>
-    <!-- INICIO NAVBAR -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-black">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../../index.html">
-            <img
-              src="../../assets/img/playpaloozalogoanimated.gif"
-              alt="Playpalooza"
-              width="86"
-              height="86"
-              class="rounded-circle"
-            />
-          </a>
-          <a
-            class="tituloPagina navbar-brand titulo text-light"
-            href="../../index.html"
-            >PLAYPALOOZA</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="container">
-              <ul
-                class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly"
-              >
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle text-light"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    CATEGORIAS
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="../categories/accionyavent1.html"
-                        >ACCION Y AVENTURAS</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="../categories/sports1.html"
-                        >DEPORTES</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="../categories/puzzle1.html"
-                        >PUZZLE</a
-                      >
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="../error404.html">OTROS</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-light"
-                    data-bs-toggle="modal"
-                    data-bs-target="#loginModal"
-                    href=""
-                    >LOGIN</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="../suscription.html"
-                    >UNETE!</a
-                  >
-                </li>
-              </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/gamesStyle.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="../../assets/img/estrella.png" type="image/x-icon">
+  <title>Playpalooza - CRICKET 24</title>
+</head>
+
+<body>
+  <!-- INICIO NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../assets/img/playpaloozalogoanimated.gif" alt="Playpalooza" width="86" height="86"
+            class="rounded-circle" />
+        </a>
+        <a class="tituloPagina navbar-brand titulo text-light" href="../../index.html">PLAYPALOOZA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="container">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  CATEGORIAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../categories/accionyavent1.html">ACCION Y AVENTURAS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../categories/sports1.html">DEPORTES</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../categories/puzzle1.html">PUZZLE</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../error404.html">OTROS</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" data-bs-toggle="modal" data-bs-target="#loginModal" href="">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="../suscription.html">UNETE!</a>
+              </li>
+            </ul>
+          </div>
+          <form action="../error404.html" class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" minlength="2"
+              maxlength="20" pattern="[a-zA-Z\s]+" required />
+            <button class="botonBuscar" type="submit">BUSCAR</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- FIN DEL NAVBAR -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>  
+  <!-- INICIO MODAL LOGIN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+        </div>
+        <div class="modal-body">
+          <form action="../error404.html">
+            <div class="form-group">
+              <label for="username">Nombre de Usuario</label>
+              <input type="text" class="form-control inputLogin" id="username"
+                placeholder="Ingresa tu nombre de usuario" minlength="2" maxlength="20" pattern="[a-zA-Z\s]+"
+                required />
             </div>
-            <form action="../error404.html" class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Search"
-                minlength="2"
-                maxlength="20"
-                pattern="[a-zA-Z\s]+"
-                required
-              />
-              <button class="botonBuscar" type="submit">BUSCAR</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- FIN DEL NAVBAR -->
-    <!-- INICIO MODAL LOGIN -->
-    <div
-      class="modal fade"
-      id="loginModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="loginModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
-          </div>
-          <div class="modal-body">
-            <form action="../error404.html">
-              <div class="form-group">
-                <label for="username">Nombre de Usuario</label>
-                <input
-                  type="text"
-                  class="form-control inputLogin"
-                  id="username"
-                  placeholder="Ingresa tu nombre de usuario"
-                  minlength="2"
-                  maxlength="20"
-                  pattern="[a-zA-Z\s]+"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input
-                  type="password"
-                  class="form-control inputLogin"
-                  id="password"
-                  placeholder="Ingresa tu contraseña"
-                  pattern=".{8,}"
-                  required
-                />
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">Ingresar</button>
-              </div>
-            </form>
-          </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input type="password" class="form-control inputLogin" id="password" placeholder="Ingresa tu contraseña"
+                pattern=".{8,}" required />
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <!-- FIN MODAL LOGIN -->
-    <!-- ===========   DESCRIPCION JUEGO   =========== -->
-    <div class="container-fluid mt-5 mb-5">
-      <div class="row flex-wrap ms-lg-0">
-        <!-- ===========   COLUMNA 1   =========== -->
-        <div class="col-12 fs-1">
-          <h1 class="tituloJuego fs-1" id="tituloJuego">
-            <img
-              src="../../assets/img/logotypes/cricket24.avif"
-              class="gameLogotype img-fluid"
-              alt="..."
-            />
-            CRICKET 24
-          </h1>
-        </div>
-        <!-- ===========   COLUMNA 2   =========== -->
-        <div class="descripcionJuego col-sm-12 col-md-6 mt-5">
-          <span class="d-block mb-2 fs-5"><b>ACERCA DE ESTE JUEGO</b></span>
-          <p class="mt-4">
-            Cricket 24 es la culminación de una década de desarrollo de
-            videojuegos de críquet e incluye equipos de todos los rincones del
-            globo. Los jugadores podrán enfrentarse a las principales naciones
-            del críquet, como Australia e Inglaterra en el torneo oficial The
-            Ashes, Indias Occidentales, Nueva Zelanda, Irlanda y muchas más.
-            Además, por vez primera, equipos profesionales del T20 de la India,
-            en más de 50 detallados estadios oficiales. Cricket 24 es el
-            videojuego de simulación de críquet más completo hasta la fecha.
-          </p>
-          <p class="mt-5"><b>FECHA DE LANZAMIENTO:</b> 5 octubre 2023</p>
-          <div class="text-center text-lg-start text-md-start">
-            <a
-              href="../suscription.html"
-              class="suscribeBtn mt-4 mb-sm-5 mb-md-5 btn btn-primary"
-              >JUGAR AHORA 🎮</a
-            >
-          </div>
-        </div>
-        <!-- ===========   VIDEO   =========== -->
-        <div class="video-responsive col-sm-12 col-md-5 mb-5 mt-4">
-          <video
-            src="https://cdn.cloudflare.steamstatic.com/steam/apps/256973767/movie480_vp9.webm?t=1696484914"
-            class="d-block w-100 embed-responsive-item"
-            controls
-          ></video>
-        </div>
-        <!-- ===========   FILA   =========== -->
-        <div class="col me-lg-5">
-          <p class="fs-5 mt-md-4">
-            <b
-              >Cricket 24: ¡creando el juego de críquet más realista de la
-              historia!</b
-            >
-          </p>
-          <p>
-            The Ashes: Cricket 24 ofrecerá la mayor rivalidad del mundo del
-            críquet, The Ashes. Detalladas escenas cinemáticas sumergen al
-            jugador en el momento a medida que avanza el torneo de The Ashes.
-            Siéntete parte del equipo con ruedas de prensa y sesiones de
-            entrenamiento en grupo. Los comentarios únicos permiten una
-            inmersión total en The Ashes. Experimenta The Ashes controlando a un
-            solo jugador, o bien a Australia o Inglaterra.
-          </p>
-          <p>
-            Licencias oficiales: más de 300 jugadores con fotogrametría
-            completa. Las principales naciones del críquet, incluyendo
-            Australia, Inglaterra, Indias Occidentales, Nueva Zelanda e Irlanda,
-            y muchas otras. Los torneos más importantes, como The Ashes, la KFC
-            BBL y la Weber WBBL, The Hundred, la Caribbean Premier League y
-            varios equipos profesionales del T20 de la India, junto con más de
-            50 detallados estadios oficiales.
-          </p>
-          <p>
-            Modo Carrera: sigue el trayecto de tu jugador, desde miembro de un
-            club hasta la escena internacional, desarrollando tus habilidades y
-            aumentando tu número de seguidores mientras perfeccionas tu juego
-            para convertirte en el próximo as del críquet. Cricket 24 ofrece más
-            control al jugador a la hora de decidir su destino, convirtiéndote
-            en un héroe de la forma abreviada, centrándote en el equipo de test
-            o intentando equilibrar las dos cosas en tu camino al estrellato.
-          </p>
-          <p>
-            Fildeo totalmente nuevo: una renovación completa de los sistemas de
-            fildeo para ofrecer los controles más realistas y reactivos que se
-            hayan visto en un videojuego de críquet.
-          </p>
-          <p>
-            Multiplataforma: totalmente multiplataforma, juega online con tus
-            amigos y los mejores jugadores del mundo sin importar la plataforma.
-            Crea y comparte contenido personalizado entre las distintas
-            plataformas, incluyendo estadios, jugadores, equipos y mucho más,
-            gracias a la academia.
-          </p>
+  </div>
+  <!-- FIN MODAL LOGIN -->
+  <!-- ===========   DESCRIPCION JUEGO   =========== -->
+  <div class="container-fluid mt-5 mb-5">
+    <div class="row flex-wrap ms-lg-0">
+      <!-- ===========   COLUMNA 1   =========== -->
+      <div class="col-12 fs-1">
+        <h1 class="tituloJuego fs-1" id="tituloJuego">
+          <img src="../../assets/img/logotypes/cricket24.avif" class="gameLogotype img-fluid" alt="..." />
+          CRICKET 24
+        </h1>
+      </div>
+      <!-- ===========   COLUMNA 2   =========== -->
+      <div class="descripcionJuego col-sm-12 col-md-6 mt-5">
+        <span class="d-block mb-2 fs-5"><b>ACERCA DE ESTE JUEGO</b></span>
+        <p class="mt-4">
+          Cricket 24 es la culminación de una década de desarrollo de
+          videojuegos de críquet e incluye equipos de todos los rincones del
+          globo. Los jugadores podrán enfrentarse a las principales naciones
+          del críquet, como Australia e Inglaterra en el torneo oficial The
+          Ashes, Indias Occidentales, Nueva Zelanda, Irlanda y muchas más.
+          Además, por vez primera, equipos profesionales del T20 de la India,
+          en más de 50 detallados estadios oficiales. Cricket 24 es el
+          videojuego de simulación de críquet más completo hasta la fecha.
+        </p>
+        <p class="mt-5"><b>FECHA DE LANZAMIENTO:</b> 5 octubre 2023</p>
+        <div class="text-center text-lg-start text-md-start">
+          <a href="../suscription.html" class="suscribeBtn mt-4 mb-sm-5 mb-md-5 btn btn-primary">JUGAR AHORA 🎮</a>
         </div>
       </div>
+      <!-- ===========   VIDEO   =========== -->
+      <div class="video-responsive col-sm-12 col-md-5 mb-5 mt-4">
+        <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256973767/movie480_vp9.webm?t=1696484914"
+          class="d-block w-100 embed-responsive-item" controls></video>
+      </div>
+      <!-- ===========   FILA   =========== -->
+      <div class="col me-lg-5">
+        <p class="fs-5 mt-md-4">
+          <b>Cricket 24: ¡creando el juego de críquet más realista de la
+            historia!</b>
+        </p>
+        <p>
+          The Ashes: Cricket 24 ofrecerá la mayor rivalidad del mundo del
+          críquet, The Ashes. Detalladas escenas cinemáticas sumergen al
+          jugador en el momento a medida que avanza el torneo de The Ashes.
+          Siéntete parte del equipo con ruedas de prensa y sesiones de
+          entrenamiento en grupo. Los comentarios únicos permiten una
+          inmersión total en The Ashes. Experimenta The Ashes controlando a un
+          solo jugador, o bien a Australia o Inglaterra.
+        </p>
+        <p>
+          Licencias oficiales: más de 300 jugadores con fotogrametría
+          completa. Las principales naciones del críquet, incluyendo
+          Australia, Inglaterra, Indias Occidentales, Nueva Zelanda e Irlanda,
+          y muchas otras. Los torneos más importantes, como The Ashes, la KFC
+          BBL y la Weber WBBL, The Hundred, la Caribbean Premier League y
+          varios equipos profesionales del T20 de la India, junto con más de
+          50 detallados estadios oficiales.
+        </p>
+        <p>
+          Modo Carrera: sigue el trayecto de tu jugador, desde miembro de un
+          club hasta la escena internacional, desarrollando tus habilidades y
+          aumentando tu número de seguidores mientras perfeccionas tu juego
+          para convertirte en el próximo as del críquet. Cricket 24 ofrece más
+          control al jugador a la hora de decidir su destino, convirtiéndote
+          en un héroe de la forma abreviada, centrándote en el equipo de test
+          o intentando equilibrar las dos cosas en tu camino al estrellato.
+        </p>
+        <p>
+          Fildeo totalmente nuevo: una renovación completa de los sistemas de
+          fildeo para ofrecer los controles más realistas y reactivos que se
+          hayan visto en un videojuego de críquet.
+        </p>
+        <p>
+          Multiplataforma: totalmente multiplataforma, juega online con tus
+          amigos y los mejores jugadores del mundo sin importar la plataforma.
+          Crea y comparte contenido personalizado entre las distintas
+          plataformas, incluyendo estadios, jugadores, equipos y mucho más,
+          gracias a la academia.
+        </p>
+      </div>
     </div>
+  </div>
 
-    <!-- ===========   FOOTER   =========== -->
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center border-top py-3 my-4"
-      >
-        <!-- INFO DEL SITIO -->
-        <div
-          class="col-12 justify-content-center col-md-12 col-lg-4 d-flex align-items-center"
-        >
-          <a
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-            href=""
-          >
-            <img
-              src="./assets/img/playpaloozalogo.png"
-              class="bi"
-              width="45"
-              alt=""
-            />
+  <!-- ===========   FOOTER   =========== -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top py-3 my-4">
+      <!-- INFO DEL SITIO -->
+      <div class="col-12 justify-content-center col-md-12 col-lg-4 d-flex align-items-center">
+        <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" href="">
+          <img src="./assets/img/playpaloozalogo.png" class="bi" width="45" alt="" />
+        </a>
+        <span class="mb-3 mb-md-0 text-light">PLAYPALOOZA, 2023 &copy;</span>
+      </div>
+
+      <!-- REDES SOCIALES -->
+      <ul
+        class="nav col-12 justify-content-center col-md-6 justify-content-md-evenly col-lg-4 justify-content-lg-center list-unstyled d-flex">
+        <li class="ms-3">
+          <a href="https://www.instagram.com/" class="text-muted" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+              <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fd5"></stop>
+                <stop offset=".328" stop-color="#ff543f"></stop>
+                <stop offset=".348" stop-color="#fc5245"></stop>
+                <stop offset=".504" stop-color="#e64771"></stop>
+                <stop offset=".643" stop-color="#d53e91"></stop>
+                <stop offset=".761" stop-color="#cc39a4"></stop>
+                <stop offset=".841" stop-color="#c837ab"></stop>
+              </radialGradient>
+              <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+              </path>
+              <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#4168c9"></stop>
+                <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+              </radialGradient>
+              <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+              </path>
+              <path fill="#fff"
+                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+              </path>
+              <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+              <path fill="#fff"
+                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+              </path>
+            </svg>
           </a>
-          <span class="mb-3 mb-md-0 text-light">PLAYPALOOZA, 2023 &copy;</span>
-        </div>
-
-        <!-- REDES SOCIALES -->
-        <ul
-          class="nav col-12 justify-content-center col-md-6 justify-content-md-evenly col-lg-4 justify-content-lg-center list-unstyled d-flex"
-        >
-          <li class="ms-3">
-            <a
-              href="https://www.instagram.com/"
-              class="text-muted"
-              target="_blank"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="40"
-                height="40"
-                viewBox="0 0 48 48"
-              >
-                <radialGradient
-                  id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1"
-                  cx="19.38"
-                  cy="42.035"
-                  r="44.899"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0" stop-color="#fd5"></stop>
-                  <stop offset=".328" stop-color="#ff543f"></stop>
-                  <stop offset=".348" stop-color="#fc5245"></stop>
-                  <stop offset=".504" stop-color="#e64771"></stop>
-                  <stop offset=".643" stop-color="#d53e91"></stop>
-                  <stop offset=".761" stop-color="#cc39a4"></stop>
-                  <stop offset=".841" stop-color="#c837ab"></stop>
-                </radialGradient>
-                <path
-                  fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
-                  d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
-                ></path>
-                <radialGradient
-                  id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2"
-                  cx="11.786"
-                  cy="5.54"
-                  r="29.813"
-                  gradientTransform="matrix(1 0 0 .6663 0 1.849)"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0" stop-color="#4168c9"></stop>
-                  <stop
-                    offset=".999"
-                    stop-color="#4168c9"
-                    stop-opacity="0"
-                  ></stop>
-                </radialGradient>
-                <path
-                  fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
-                  d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
-                ></path>
-                <path
-                  fill="#fff"
-                  d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"
-                ></path>
-                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
-                <path
-                  fill="#fff"
-                  d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"
-                ></path>
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a
-              href="https://www.facebook.com/"
-              class="text-muted"
-              target="_blank"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="40"
-                height="40"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  fill="#039be5"
-                  d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"
-                ></path>
-                <path
-                  fill="#fff"
-                  d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"
-                ></path>
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a href="https://twitter.com/" class="text-muted" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="30"
-                height="40"
-                viewBox="0,0,256,256"
-              >
-                <g
-                  fill="#000000"
-                  fill-rule="nonzero"
-                  stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
-                  style="mix-blend-mode: normal"
-                >
-                  <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+        </li>
+        <li class="ms-3">
+          <a href="https://www.facebook.com/" class="text-muted" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+              <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
+              <path fill="#fff"
+                d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a href="https://twitter.com/" class="text-muted" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="40" viewBox="0,0,256,256">
+              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+              </g>
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                  </path>
                 </g>
-                <g
-                  fill="#ffffff"
-                  fill-rule="nonzero"
-                  stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
-                  style="mix-blend-mode: normal"
-                >
-                  <g transform="scale(5.12,5.12)">
-                    <path
-                      d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-            </a>
-          </li>
-        </ul>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-        <!-- LINKS REFERIDOS -->
-        <ul class="nav col-12 justify-content-center col-md-6 my-3 col-lg-4">
-          <li class="nav-item">
-            <a class="nav-link px-3 text-light" href="../../views/about.html"
-              >Sobre Nosotros</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 text-light" href="../../views/contact.html"
-              >Contacto</a
-            >
-          </li>
-        </ul>
-      </footer>
-    </div>
+      <!-- LINKS REFERIDOS -->
+      <ul class="nav col-12 justify-content-center col-md-6 my-3 col-lg-4">
+        <li class="nav-item">
+          <a class="nav-link px-3 text-light" href="../../views/about.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-light" href="../../views/contact.html">Contacto</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
