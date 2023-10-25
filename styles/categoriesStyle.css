@@ -98,3 +98,36 @@
 .inputLogin::placeholder {
     color: lightgray !important;
 } 
+
+/* CONFIGURACION BARRA DE SCROLL */
+body::-webkit-scrollbar {
+    width: 20px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(205, 0, 255, 1) 74%);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    border: 3px solid white;
+    /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-track:hover {
+    background: rgb(0, 0, 0);
+    background: white
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(205, 0, 255, 1) 74%);
+    /* color of the scroll thumb */
+    border: 3px solid blueviolet;
+}
